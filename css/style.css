@@ -2,26 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
 
 :root{
-/*============= COLORS ==============*/
---white: hsl(0, 0%, 100%);
---primary-color: hsl(196, 100%, 47%);
---dark-dark: hsl(0, 0%, 0%);
---dark-light: hsl(240, 11%, 30%);
---medium-dark: hsl(226, 9%, 62%);
---medium-light: hsl(0, 0%, 85%);
---bg-light: hsl(218, 30%, 96%);
-
-/*========== Font and typography ==========*/
---body-font: 'Roboto', sans-serif;
---h1-font-size: 4.5rem;
---h2-font-size: 2rem;
---h3-font-size: 2.4rem;
---h4-font-size: 1.6rem;
---p-font-size: 1.4rem;
-
-font-size: 62.5%; /* 1rem = 10px */
+ /*=============== VARIABLES CSS ===============*/
+ /*============= colors ==============*/
+ --white: hsl(0, 0%, 100%);
+ --primary-color: hsl(196, 100%, 47%);
+ --dark-dark: hsl(0, 0%, 0%);
+ --dark-light: hsl(240, 11%, 30%);
+ --medium-dark: hsl(226, 9%, 62%);
+ --medium-light: hsl(0, 0%, 85%);
+ --bg-light: hsl(218, 30%, 96%);
+ 
+ /*========== Font and typography ==========*/
+ --body-font: 'Roboto', sans-serif;
+ --h1-font-size: 4.5rem;
+ --h2-font-size: 2rem;
+ --h3-font-size: 2.4rem;
+ --h4-font-size: 1.6rem;
+ --p-font-size: 1.4rem;
+ 
+ font-size: 62.5%; /* 1rem = 10px */
 }
 
+/*organização do css = position, display, box, background, text*/
 /*=============== GERAL ======================*/
 *{
     margin: 0;
@@ -29,6 +31,27 @@ font-size: 62.5%; /* 1rem = 10px */
     box-sizing: border-box;
 }
 
-html{
+body{
     font-family: var(--body-font);
+    font-size: var(--p-font-size);
+}
+
+h1{
+    font-size: var(--h1-font-size);
+    color: rgb(164, 62, 62); 
+    font-weight: 600;
+    line-height: 5.3rem;
+    text-align: center;
+}
+h2{
+    font-size: var(--h2-font-size);
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+    text-transform: capitalize;
+}
+p{
+    font-size: var(--p-font-size);
+    font-weight: 300;
+    line-height: 186.5%;
 }
