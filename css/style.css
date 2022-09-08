@@ -55,3 +55,26 @@ p{
     font-weight: 300;
     line-height: 186.5%;
 }
+
+/*=============== HEADER ======================*/
+header{
+    display: flex;
+
+    width: 100%;
+    height: 7.3rem;
+    background: var(--white);
+}
+
+header .logo{
+    width: 14.4rem;
+}
+
+header :is(nav, .header-right .btn-login){
+    display: none;
+}
+
+
+
+
+
+
