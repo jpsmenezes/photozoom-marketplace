@@ -36,15 +36,19 @@ body{
     font-size: var(--p-font-size);    
 }
 
+body :is(h1,h3){
+    color: var(--white); 
+    text-align: center;
+    text-shadow: 0 0 5px var(--dark-light);
+}
+
 h1{
     width: 70%;
     padding-bottom: 3.6rem;
-
-    font-size: var(--h1-font-size);
-    color: var(--white); 
+    font-size: var(--h1-font-size);    
     font-weight: 600;
     line-height: 5.3rem;
-    text-align: center;
+    
 }
 h2{
     font-size: var(--h2-font-size);
@@ -58,9 +62,7 @@ h3{
     padding-bottom: 6.3rem;
     
     font-size: var(--h3-font-size);
-    font-weight: 500;
-    color: var(--white);
-    text-align: center;
+    font-weight: 500;    
     line-height: 2.8rem;
 }
 
@@ -124,7 +126,6 @@ header .header-right{
 
 .header-right .menu{
     font-size: 3.5rem;
-
     color: var(--dark-light);
 
     cursor: pointer;
@@ -133,6 +134,8 @@ header .header-right{
 /*=============== MAIN ======================*/
 section.hero{
     width: 100%;
+    height: 100vh;
+
     overflow: hidden;
 }
 section .hero-content{
@@ -144,8 +147,37 @@ section .hero-content{
     align-items: center;
 
     width: 100%;
-    
+}
 
+section form{
+    display: flex;
+    justify-content: center;
+    width: 100%;       
+}
+section input[type=text]{
+   width: clamp(2.34rem, 70%, 50.5rem);
+   height: 4rem;   
+   border: none;
+   border-radius: 5px 0px 0px 5px;
+   background-image: url(../assets/icon/bx-search.svg);
+   background-position: 10px 10px; 
+   background-repeat: no-repeat;
+   padding: 12px 20px 12px 40px;
+}
+section input[type=submit]{
+    position: relative;
+    left: -0.3rem;
+
+    width: 9.7rem;
+    height: 4rem; 
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    background-color: var(--primary-color);
+
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.4rem;
+         
 }
 
 
