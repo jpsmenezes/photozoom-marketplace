@@ -175,8 +175,10 @@ section input[type=submit]{
     background-color: var(--primary-color);
 
     color: var(--white);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.4rem;
+
+    cursor: pointer;
          
 }
 
