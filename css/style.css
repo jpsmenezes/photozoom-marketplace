@@ -73,6 +73,9 @@ header{
     left: 0;
 
     width: 100%;
+    background: var(--white);  
+    box-shadow: 0 5px 3px hsla(240, 11%, 30%, 0.065);
+
 }
 
 header .container{
@@ -81,8 +84,7 @@ header .container{
     justify-content: space-between;
 
     width: 100%;
-    height: 7.3rem;    
-    background: var(--white);    
+    height: 7.3rem;        
 }
 
 header .logo{
@@ -93,17 +95,26 @@ header :is(nav, .header-right .btn-login){
     display: none;
 }
 
-.header-right i{
-    color: var(--medium-dark);
+.header-right{
+   display: flex;
+   align-items: center;
 }
 
-.header-right i:first-child{   
-    margin-right: 6rem;
-    font-size: 2.2rem;     
+.header-right .moon{   
+    margin-right: 4.5rem;
+
+    font-size: 2.2rem;  
+    color: var(--medium-dark); 
+    
+    cursor: pointer;
 }
 
-.header-right i:last-child{
-    font-size: 10rem;
+.header-right .menu{
+    font-size: 3.5rem;
+
+    color: var(--dark-light);
+
+    cursor: pointer;
 }
 
 
