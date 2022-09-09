@@ -37,8 +37,11 @@ body{
 }
 
 h1{
+    width: 70%;
+    padding-bottom: 3.6rem;
+
     font-size: var(--h1-font-size);
-    color: rgb(164, 62, 62); 
+    color: var(--white); 
     font-weight: 600;
     line-height: 5.3rem;
     text-align: center;
@@ -50,6 +53,17 @@ h2{
     text-align: center;
     text-transform: capitalize;
 }
+h3{
+    width: 80%;
+    padding-bottom: 6.3rem;
+    
+    font-size: var(--h3-font-size);
+    font-weight: 500;
+    color: var(--white);
+    text-align: center;
+    line-height: 2.8rem;
+}
+
 p{
     font-size: var(--p-font-size);
     font-weight: 300;
@@ -57,8 +71,7 @@ p{
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
-.wrapper{
-    max-width: 1024px;
+.wrapper{   
     padding-inline: 1.5rem;   
 }
 
@@ -71,11 +84,11 @@ header{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 100;
 
     width: 100%;
     background: var(--white);  
     box-shadow: 0 5px 3px hsla(240, 11%, 30%, 0.065);
-
 }
 
 header .container{
@@ -91,11 +104,11 @@ header .logo{
     width: 14.4rem;
 }
 
-header :is(nav, .header-right .btn-login){
+header :is(nav, .btn-login){
     display: none;
 }
 
-.header-right{
+header .header-right{
    display: flex;
    align-items: center;
 }
@@ -116,6 +129,26 @@ header :is(nav, .header-right .btn-login){
 
     cursor: pointer;
 }
+
+/*=============== MAIN ======================*/
+section.hero{
+    width: 100%;
+    overflow: hidden;
+}
+section .hero-content{
+    position: absolute;
+    top: 17rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    
+
+}
+
+
 
 
 
