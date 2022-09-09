@@ -33,7 +33,7 @@
 
 body{
     font-family: var(--body-font);
-    font-size: var(--p-font-size);
+    font-size: var(--p-font-size);    
 }
 
 h1{
@@ -56,13 +56,33 @@ p{
     line-height: 186.5%;
 }
 
+/*=============== REUSABLE CSS CLASSES ===============*/
+.wrapper{
+    max-width: 1024px;
+    padding-inline: 1.5rem;   
+}
+
+.grid{
+    display: grid;
+}
+
 /*=============== HEADER ======================*/
 header{
-    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
 
     width: 100%;
-    height: 7.3rem;
-    background: var(--white);
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 7.3rem;    
+    background: var(--white);    
 }
 
 header .logo{
@@ -71,6 +91,19 @@ header .logo{
 
 header :is(nav, .header-right .btn-login){
     display: none;
+}
+
+.header-right i{
+    color: var(--medium-dark);
+}
+
+.header-right i:first-child{   
+    margin-right: 6rem;
+    font-size: 2.2rem;     
+}
+
+.header-right i:last-child{
+    font-size: 10rem;
 }
 
 
