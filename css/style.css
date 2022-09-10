@@ -220,7 +220,13 @@ section.about button{
     text-align: left;
     color: var(--white);
 
-    cursor: pointer;    
+    cursor: pointer;  
+    
+    transition: .3s;
+}
+
+section.about button:hover{
+    background-color: var(--dark-light);
 }
 
 
