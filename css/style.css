@@ -114,9 +114,20 @@ header .container{
     height: 7.3rem;        
 }
 
-header .logo{
+header :is( .logo-white, .logo-black, .logo-menu ){
     width: 14.4rem;
 }
+
+header .logo-white{
+    display: block;
+}
+header .logo-black{
+    display: none;
+}
+header .logo-menu{
+    display: none;
+}
+
 
 header :is(nav, .btn-login){
     display: none;
@@ -134,14 +145,68 @@ header .header-right{
     color: var(--medium-dark); 
     
     cursor: pointer;
+
+    transition: .3s;
 }
 
-.header-right .menu{
-    font-size: 3.5rem;
-    color: var(--dark-light);
+.header-right .moon:hover{
+    color: var(--primary-color);
+}
 
+.header-right :is(.menu-open, .menu-close ){
+    font-size: 3.5rem;
     cursor: pointer;
 }
+
+.header-right .menu-open{   
+    color: var(--dark-light);   
+}
+.header-right .menu-close{
+   display: none;
+}
+
+/*=============== MENU EXPENDED ======================*/
+
+/*=== HEADER ====*/
+body.expended header{
+    background: var(--dark-light);  
+    box-shadow: 0 5px 3px hsla(240, 11%, 30%, 0.065);
+}
+body.expended header .logo-white{
+    display: none;
+}
+
+body.expended header .logo-menu{
+    display: block;
+}
+
+body.expended header .header-right .moon{
+    display: none;
+}
+
+body.expended nav{  
+    position: absolute;
+    top: 7.3rem;
+    left: 0;
+    z-index: 100;
+
+    display: initial;
+    overflow: hidden;
+
+    width: 100%;
+    height: 100vh;
+    background-color: var(--dark-light);    
+}
+
+body.expended .header-right .menu-open{   
+   display: none;  
+}
+.header-right .menu-close{
+    display: block;
+   color: var(--medium-dark);
+}
+
+
 
 /*=============== HERO ======================*/
 section .hero__background-image img{
