@@ -211,7 +211,7 @@ section.about .btn__button{
     display: flex;
     justify-content: center;
 }
-section.about button{
+section.about button.planoIdeal{
     width: clamp(26.6rem, 85%, 51rem);
     margin-block: var(--margin-tittle);
     padding: 1rem 1rem 1rem 6rem;   
@@ -241,15 +241,57 @@ section.about button:hover{
 }
 
 section.about h2{
-    color: var(--dark-light);
     padding-block: var(--margin-tittle);
+
+    color: var(--dark-light);
+    
 }
 
 section.about .line{
     display: flex;
     justify-content: center;
+
     margin-bottom: var(--margin-tittle);
 }
+
+section.about div p{
+    padding-inline: 3rem;
+    margin-bottom: var(--margin-tittle);
+    color: var(--dark-light);
+}
+section.about button.btn-premium{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+
+    width: 28.6rem;
+    height: 4.2rem;
+    border: 2px solid var(--primary-color);
+    background-color: var(--white);
+
+
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: var(--medium);  
+    font-size: var(--h4-font-size); 
+    
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+section.about button.btn-premium:hover{
+    gap: 2rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+section.about button.btn-premium i{
+    font-size: var(--h3-font-size);
+}
+
+
 
 
 
