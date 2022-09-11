@@ -43,6 +43,8 @@
 }
 
 body{
+    overflow: overlay; 
+
     font-family: var(--body-font);
     font-size: var(--p-font-size);    
 }
@@ -186,16 +188,31 @@ body.expended header .header-right .moon{
 
 body.expended nav{  
     position: absolute;
-    top: 7.3rem;
+    top: 7.2rem;
     left: 0;
     z-index: 100;
 
-    display: initial;
+    display: flex;
+    justify-content: center;    
     overflow: hidden;
 
     width: 100%;
-    height: 100vh;
+    height: 100vh;   
     background-color: var(--dark-light);    
+}
+
+body.expended nav ul{
+    margin-top: 6rem;
+    text-align: center;
+    list-style: none;
+}
+
+body.expended nav ul li a{
+    text-decoration: none;
+    font-weight: var(--light);
+    font-size: 2rem;
+    line-height: 75px;    
+    color: var(--medium-light);
 }
 
 body.expended .header-right .menu-open{   
