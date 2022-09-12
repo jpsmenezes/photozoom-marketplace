@@ -84,6 +84,10 @@ p{
     line-height: 186.5%;
 }
 
+a{
+    text-decoration: none;
+}
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .wrapper{   
     padding-inline: var(--padding-wrapper);   
@@ -165,6 +169,27 @@ header .header-right{
    display: none;
 }
 
+header :is(.nav-btn-login, .btn-login){    
+    padding: 1.65rem 5.85rem;
+    border-radius: 4rem;
+    background-color: var(--primary-color);
+
+    font-weight: var(--medium);
+    font-size: var(--p-font-size);   
+    letter-spacing: 0.045em;
+    color: var(--white);
+
+    transition: .3s;
+}
+
+header .nav-btn-login:hover{
+    background-color: var(--medium-light);
+    color: var(--dark-light);
+}
+header .nav-btn-login{
+    margin-top: 5rem;
+}
+
 /*=============== MENU EXPENDED ======================*/
 body.expended header{
     background: var(--dark-light);  
@@ -189,7 +214,8 @@ body.expended nav{
     z-index: 100;
 
     display: flex;
-    justify-content: center;    
+    flex-direction: column;
+    align-items: center;    
     overflow: hidden;
 
     width: 100%;
@@ -203,8 +229,7 @@ body.expended nav ul{
     list-style: none;
 }
 
-body.expended nav ul li a{
-    text-decoration: none;
+body.expended nav ul li a{    
     font-weight: var(--light);
     font-size: 2rem;
     line-height: 75px;    
@@ -288,7 +313,7 @@ section.about .btn__button{
     justify-content: center;
 }
 section.about button.planoIdeal{
-    width: clamp(26.6rem, 85%, 51rem);
+    width: clamp(26.6rem, 100%, 51rem);
     margin-block: var(--margin-tittle);
     padding: 1rem 1rem 1rem 6rem;   
     border-radius: 3rem;
