@@ -43,8 +43,6 @@
 }
 
 body{
-    overflow: overlay; 
-
     font-family: var(--body-font);
     font-size: var(--p-font-size);    
 }
@@ -113,7 +111,7 @@ header .container{
     justify-content: space-between;
 
     width: 100%;
-    height: 7.3rem;        
+    height: 7.3rem;         
 }
 
 header :is( .logo-white, .logo-black, .logo-menu ){
@@ -168,8 +166,6 @@ header .header-right{
 }
 
 /*=============== MENU EXPENDED ======================*/
-
-/*=== HEADER ====*/
 body.expended header{
     background: var(--dark-light);  
     box-shadow: 0 5px 3px hsla(240, 11%, 30%, 0.065);
@@ -222,8 +218,6 @@ body.expended .header-right .menu-close{
     display: block;
    color: var(--medium-dark);
 }
-
-
 
 /*=============== HERO ======================*/
 section .hero__background-image img{
