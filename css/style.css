@@ -218,7 +218,7 @@ body.expended nav ul li a{
 body.expended .header-right .menu-open{   
    display: none;  
 }
-.header-right .menu-close{
+body.expended .header-right .menu-close{
     display: block;
    color: var(--medium-dark);
 }
