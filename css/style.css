@@ -132,8 +132,24 @@ header .logo-menu{
     display: none;
 }
 
+header nav{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 7.2rem;
+    left: 0;
+    z-index: 150;  
 
-header :is(nav, .btn-login){
+    width: 100%;
+    height: 100vh;   
+    background-color: var(--dark-light);
+
+
+    transform: translateY(100%);
+    transition: transform .3s;
+   
+}
+header .btn-login{
     display: none;
 }
 
@@ -183,7 +199,7 @@ header :is(.nav-btn-login, .btn-login){
 }
 
 header .nav-btn-login:hover{
-    background-color: var(--medium-light);
+    background-color: var(--medium-dark);
     color: var(--dark-light);
 }
 header .nav-btn-login{
@@ -208,19 +224,15 @@ body.expended header .header-right .moon{
 }
 
 body.expended nav{  
-    position: absolute;
-    top: 7.2rem;
-    left: 0;
-    z-index: 100;
-
     display: flex;
     flex-direction: column;
     align-items: center;    
     overflow: hidden;
 
-    width: 100%;
-    height: 100vh;   
-    background-color: var(--dark-light);    
+    opacity: 1;
+    visibility: visible;
+    
+    transform: translateY(0%);
 }
 
 body.expended nav ul{
