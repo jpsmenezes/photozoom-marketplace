@@ -242,10 +242,16 @@ body.expended nav ul{
 }
 
 body.expended nav ul li a{    
+    padding: 1.5rem 6rem;
     font-weight: var(--light);
     font-size: 2rem;
     line-height: 75px;    
     color: var(--medium-light);
+
+    transition: .2s;
+}
+body.expended nav ul li a:hover{
+    background-color: var(--primary-color);
 }
 
 body.expended .header-right .menu-open{   
