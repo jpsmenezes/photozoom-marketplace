@@ -87,9 +87,15 @@ a{
 .grid{
     display: grid;
 }
+.line{
+    display: flex;
+    justify-content: center; 
+
+    margin-bottom: var(--margin-tittle);
+}
 
 /*=============== HEADER ======================*/
-header{
+body > header{
     position: fixed;
     top: 0;
     left: 0;
@@ -254,13 +260,13 @@ body.expended .header-right .menu-close{
 }
 
 /*=============== HERO ======================*/
-section.hero :is(h1,h3){
+section#hero :is(h1,h3){
     color: var(--white); 
     text-align: center;
     text-shadow: 0 0 5px var(--dark-light);
 }
 
-section.hero h3{
+section#hero h3{
     width: 80%;
     padding-bottom: 6.3rem;
 }
@@ -283,13 +289,13 @@ section .hero-content{
     width: 100%;
 }
 
-section form{
+section#hero form{
     display: flex;
     justify-content: center;
 
     width: 100%;       
 }
-section input[type=text]{
+section#hero input[type=text]{
    width: clamp(2.34rem, 70%, 50.5rem);
    height: 4rem;   
    border: none;
@@ -300,10 +306,10 @@ section input[type=text]{
    padding: 12px 20px 12px 40px;
 }
 
-section input[type=text]:focus{
+section#hero input[type=text]:focus{
     outline: none;
 }
-section input[type=submit]{
+section#hero input[type=submit]{
     position: relative;
     left: -0.3rem;
 
@@ -322,17 +328,17 @@ section input[type=submit]{
     transition: .3s;
 }
 
-section input[type=submit]:hover{
+section#hero input[type=submit]:hover{
     background-color:var(--dark-light);
 }
 
 /*=============== ABOUT ======================*/
 
-section.about .btn__button{
+section#about .btn__button{
     display: flex;
     justify-content: center;
 }
-section.about button.planoIdeal{
+section#about button.planoIdeal{
     width: clamp(26.6rem, 100%, 51rem);
     margin-block: var(--margin-tittle);
     padding: 1rem 1rem 1rem 6rem;   
@@ -357,30 +363,23 @@ section.about button.planoIdeal{
     transition: .3s;
 }
 
-section.about button:hover{
+section#about button:hover{
     background-color: var(--dark-light);
 }
 
-section.about h2{
+section#about h2{
     padding-block: var(--margin-tittle);
 
     color: var(--dark-light);
     
 }
 
-section.about .line{
-    display: flex;
-    justify-content: center;
-
-    margin-bottom: var(--margin-tittle);
-}
-
-section.about div p{
+section#about div p{
     padding-inline: 3rem;
     margin-bottom: var(--margin-tittle);
     color: var(--dark-light);
 }
-section.about button.btn-premium{
+section#about button.btn-premium{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -404,25 +403,25 @@ section.about button.btn-premium{
     transition: .3s;
 }
 
-section.about button.btn-premium:hover{
+section#about button.btn-premium:hover{
     gap: 2rem;
     background-color: var(--primary-color);
     color: var(--white);
 }
 
-section.about button.btn-premium i{
+section#about button.btn-premium i{
     font-size: var(--h3-font-size);
 }
 
 /*=============== PICTURES ======================*/
-section.pictures .photo{
+section#pictures .photo{
     position: relative;
 
     width: 100%;
     height: 45rem;    
 }
 
-section.pictures .photo img{
+section#pictures .photo img{
     position: absolute;
 
     width: 100%;
@@ -431,11 +430,11 @@ section.pictures .photo img{
     object-position: 30% 0;
 }
 
-section.pictures .photo:last-child img{
+section#pictures .photo:last-child img{
     object-position: 60% 0;
 }
 
-section.pictures .photo-content{
+section#pictures .photo-content{
     position: absolute;
     top: 20rem;
     left: 10%;
@@ -444,29 +443,43 @@ section.pictures .photo-content{
     width: 26.4rem;      
 }
 
-section.pictures .photo-tittle{
+section#pictures .photo-tittle{
     display: flex;
     gap: 1rem;
 }
 
-section.pictures .line-vertical{
+section#pictures .line-vertical{
     content: url(../assets/icon/line-blue-vertical.svg);
 }
 
-section.pictures :is(h3, p){
+section#pictures :is(h3, p){
     color: var(--white);   
     text-shadow: 0 0 5px var(--dark-dark);
 }
-section.pictures h3{
+section#pictures h3{
     width: 21rem;
-    
+
     line-height: 134.19%;
 }
-section.pictures p{   
+section#pictures p{   
     line-height: 167.19%;
     font-weight: 400;
 }
 
+/*=============== TUDO QUE VC PRECISA ======================*/
+section#tudoQueVocePrecisa header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 5rem;
+}
+section#tudoQueVocePrecisa h2{
+    width: 70%;
+    padding-block: var(--margin-tittle);
+
+    color: var(--dark-light);
+}
 
 
 
