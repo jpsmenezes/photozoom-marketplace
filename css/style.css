@@ -47,12 +47,6 @@ body{
     font-size: var(--p-font-size);    
 }
 
-body :is(h1,h3){
-    color: var(--white); 
-    text-align: center;
-    text-shadow: 0 0 5px var(--dark-light);
-}
-
 h1{
     width: 70%;
     padding-bottom: 3.6rem;
@@ -69,10 +63,7 @@ h2{
     text-align: center;
     text-transform: capitalize;
 }
-h3{
-    width: 80%;
-    padding-bottom: 6.3rem;
-    
+h3{    
     font-size: var(--h3-font-size);
     font-weight: var(--medium-regular);    
     line-height: 2.8rem;
@@ -263,6 +254,17 @@ body.expended .header-right .menu-close{
 }
 
 /*=============== HERO ======================*/
+section.hero :is(h1,h3){
+    color: var(--white); 
+    text-align: center;
+    text-shadow: 0 0 5px var(--dark-light);
+}
+
+section.hero h3{
+    width: 80%;
+    padding-bottom: 6.3rem;
+}
+
 section .hero__background-image img{
     width: 100%;
     height: 100vh;
@@ -412,6 +414,29 @@ section.about button.btn-premium i{
     font-size: var(--h3-font-size);
 }
 
+/*=============== PICTURES ======================*/
+section.pictures .photo-one{
+    position: relative;
+
+    width: 100%;
+    height: 45rem;    
+}
+section.pictures .photo-one img{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: 40% 0;
+}
+.pictures-content{
+    position: absolute;
+    z-index: 10;  
+    
+}
+section.pictures h3::before{
+    content: url(../assets/icon/line-blue-vertical.svg);
+}
 
 
 
