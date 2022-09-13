@@ -481,6 +481,24 @@ section#tudoQueVocePrecisa h2{
     color: var(--dark-light);
 }
 
+section#tudoQueVocePrecisa .options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#tudoQueVocePrecisa .options img{
+    width: 34.4rem;
+    height: 36.4rem;
+
+    object-fit: cover;
+    object-position: 0 center; 
+}
+
+section#tudoQueVocePrecisa .options-text{
+    width: 34.4rem;
+}
+
 
 
 
