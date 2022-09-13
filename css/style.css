@@ -458,6 +458,8 @@ section.pictures :is(h3, p){
     text-shadow: 0 0 5px var(--dark-dark);
 }
 section.pictures h3{
+    width: 21rem;
+    
     line-height: 134.19%;
 }
 section.pictures p{   
