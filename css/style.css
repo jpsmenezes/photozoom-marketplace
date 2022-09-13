@@ -415,13 +415,13 @@ section.about button.btn-premium i{
 }
 
 /*=============== PICTURES ======================*/
-section.pictures .photo-one{
+section.pictures .photo{
     position: relative;
 
     width: 100%;
     height: 45rem;    
 }
-section.pictures .photo-one img{
+section.pictures .photo img{
     position: absolute;
 
     width: 100%;
@@ -429,13 +429,31 @@ section.pictures .photo-one img{
     object-fit:cover;
     object-position: 40% 0;
 }
-.pictures-content{
+section.pictures .photo-content{
     position: absolute;
+    top: 20rem;
+    left: 10%;
     z-index: 10;  
-    
+
+    width: 26.4rem;      
 }
-section.pictures h3::before{
+
+section.pictures .photo-tittle{
+    display: flex;
+    gap: 1rem;
+}
+section.pictures .line-vertical{
     content: url(../assets/icon/line-blue-vertical.svg);
+}
+
+section.pictures h3{
+    color: var(--white);   
+    line-height: 134.19%;
+}
+
+section.pictures p{
+    color: var(--white);
+    line-height: 167.19%;
 }
 
 
