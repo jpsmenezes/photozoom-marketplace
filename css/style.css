@@ -507,7 +507,10 @@ section#tudoQueVocePrecisa .options-text{
     margin: 2rem 0 1rem;
 }
 
-
+/*=============== CATEGORIAS ======================*/
+section#categorias{
+    justify-content: center;
+}
 
 
 
