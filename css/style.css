@@ -338,7 +338,7 @@ section#about .btn__button{
     justify-content: center;
 }
 section#about button.planoIdeal{
-    width: clamp(26.6rem, 100%, 51rem);
+    width: clamp(26.6rem, 90%, 50.1rem);
     margin-block: var(--margin-tittle);
     padding: 1rem 1rem 1rem 6rem;   
     border-radius: 3rem;
