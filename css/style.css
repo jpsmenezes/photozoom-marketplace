@@ -78,6 +78,10 @@ a{
     text-decoration: none;
 }
 
+li{
+    list-style: none;
+}
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .wrapper{   
     padding-inline: var(--padding-wrapper);   
@@ -86,11 +90,12 @@ a{
 .grid{
     display: grid;
 }
+
 .line{
     display: flex;
     justify-content: center; 
 
-    margin-bottom: var(--margin-tittle);
+    margin-block: var(--margin-tittle);
 }
 
 /*=============== HEADER ======================*/
@@ -203,7 +208,7 @@ header .nav-btn-login{
 }
 
 /*=============== MENU EXPENDED ======================*/
-body.expended header{
+body.expended > header{
     background: var(--dark-light);  
     box-shadow: 0 5px 3px hsla(240, 11%, 30%, 0.065);
 }
@@ -367,7 +372,7 @@ section#about button:hover{
 }
 
 section#about h2{
-    padding-block: var(--margin-tittle);
+    padding-top: var(--margin-tittle);
 
     color: var(--dark-light);
     
@@ -475,15 +480,23 @@ section#tudoQueVocePrecisa header{
 }
 section#tudoQueVocePrecisa h2{
     width: 70%;
-    padding-block: var(--margin-tittle);
+    padding-top: var(--margin-tittle);
 
     color: var(--dark-light);
+}
+
+section#tudoQueVocePrecisa .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 section#tudoQueVocePrecisa .options{
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    width: min(34.4rem, 100%);
 }
 
 section#tudoQueVocePrecisa .options img{
@@ -508,15 +521,19 @@ section#tudoQueVocePrecisa .options-text{
 }
 
 /*=============== CATEGORIAS ======================*/
-#categorias{
-   width: 100%;
-   background-color:blue;
-    
+section#categorias{
+   grid-template-columns:auto;
+   justify-content: center;
+      
+   width: 100%;  
+   background-color: var(--bg-light)  
 }
 
 section#categorias h2{
-    padding-bottom: 3rem;
+   padding-top: var(--margin-tittle);
 }
+
+
 
 
 
