@@ -533,6 +533,33 @@ section#categorias h2{
    padding-top: var(--margin-tittle);
 }
 
+section#categorias ul{
+    margin-bottom: 5rem;
+}
+
+section#categorias ul > li{
+    text-align: center;
+
+    transition: .3s;
+}
+
+section#categorias ul > li:hover{
+    background-color: var(--medium-light);
+}
+
+section#categorias ul > li a{
+    font-size: var(--h4-font-size);
+    font-weight: var(--light);
+    line-height: 200%;   
+    text-transform: capitalize;
+    color: var(--dark-light);    
+}
+
+
+
+
+
+
 
 
 
