@@ -270,7 +270,7 @@ section#hero h3{
     padding-bottom: 6.3rem;
 }
 
-section .hero__background-image img{
+section .hero-background-image img{
     width: 100%;
     height: 100vh;
     
@@ -508,10 +508,15 @@ section#tudoQueVocePrecisa .options-text{
 }
 
 /*=============== CATEGORIAS ======================*/
-section#categorias{
-    justify-content: center;
+#categorias{
+   width: 100%;
+   background-color:blue;
+    
 }
 
+section#categorias h2{
+    padding-bottom: 3rem;
+}
 
 
 
