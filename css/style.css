@@ -556,6 +556,9 @@ body.expended .header-right .menu-close{
 }
 
 /*=============== BANNER-SLIDER ======================*/
+#banner-slider .banner-slider-container{
+    width: 100%;   
+}
 #banner-slider .banner-slider-image{
     position: relative;
     width: 100%;
@@ -621,7 +624,20 @@ body.expended .header-right .menu-close{
 #banner-slider .banner-slider-content button:hover{
     gap: 2rem;
 }
+/*swiper button css*/
+.nav-btn::after,
+.nav-btn::before{    
+    font-size: 2rem; 
+    font-weight: var(--bold);
+    color: var(--dark-light); 
+    opacity: 0; 
+}
 
+.swiper-pagination-bullet{
+    background-color: var(--dark-light);
+    width: 12px;
+    height: 12px;
+}
 
 
 

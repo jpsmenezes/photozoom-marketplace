@@ -19,7 +19,7 @@ document.querySelector('.nav-btn-login').addEventListener('click', closeMenu);
 // swiper js
   var bannerSlide = new Swiper(".banner-slider-container", {
     slidesPerView: 1,
-    spaceBetween: 30,
+    grabCursor:true,    
     loop: true,
     pagination: {
       el: ".swiper-pagination",
