@@ -588,7 +588,8 @@ body.expended .header-right .menu-close{
     font-weight: var(--bold);    
     line-height: 150%;  
     text-align: center;
-    color: var(--dark-light);   
+    color: var(--white);   
+    text-shadow: 0 0 5px var(--dark-dark);
 }
 
 #banner-slider .btn-saiba-mais i{
