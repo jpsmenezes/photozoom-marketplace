@@ -16,5 +16,19 @@ document.querySelectorAll('.linkMenu').forEach(link => link.addEventListener('cl
 document.querySelector('.nav-btn-login').addEventListener('click', closeMenu);
 
 
+// swiper js
+  var bannerSlide = new Swiper(".banner-slider-container", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 
 

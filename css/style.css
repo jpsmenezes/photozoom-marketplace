@@ -566,7 +566,7 @@ body.expended .header-right .menu-close{
 #banner-slider .banner-slider-image img{
     width: 100%;
     height: 100%;
-    object-fit: cover;   
+    object-fit: cover;     
 }
 
 #banner-slider .banner-slider-content{
