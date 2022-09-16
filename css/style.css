@@ -422,7 +422,7 @@ body.expended .header-right .menu-close{
     position: relative;
 
     width: 100%;
-    height: 100vh;    
+    height: 90vh;    
 }
 
 #pictures .photo img{
@@ -561,6 +561,7 @@ body.expended .header-right .menu-close{
 }
 #banner-slider .banner-slider-image{
     position: relative;
+
     width: 100%;
     height: 90vh;
     overflow: hidden;
@@ -574,8 +575,8 @@ body.expended .header-right .menu-close{
 
 #banner-slider .banner-slider-content{
     position: absolute;
-    z-index: 10;
     top: 40%;
+    z-index: 10;
 
     display: flex;
     flex-direction: column;   
@@ -585,7 +586,7 @@ body.expended .header-right .menu-close{
 }
 
 #banner-slider .banner-slider-content span{
-   padding-bottom: 5.2rem;
+    padding-bottom: 5.2rem;
 
     font-size: 3.2rem;
     font-weight: var(--bold);    
@@ -624,6 +625,7 @@ body.expended .header-right .menu-close{
 #banner-slider .banner-slider-content button:hover{
     gap: 2rem;
 }
+
 /*swiper button css*/
 .nav-btn::after,
 .nav-btn::before{    
@@ -639,7 +641,14 @@ body.expended .header-right .menu-close{
     height: 12px;
 }
 
+/*=============== DEPOIMENTO ==========================*/
+#depoimentos .depoimentos-content{
+    position: relative;
 
+    width: 100%;
+    height: 90vh;
+    background-color: var(--primary-color);
+}
 
 
 
