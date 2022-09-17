@@ -642,12 +642,64 @@ body.expended .header-right .menu-close{
 }
 
 /*=============== DEPOIMENTO ==========================*/
-#depoimentos .depoimentos-content{
+#depoimentos .depoimentos-slider-container{
     position: relative;
 
     width: 100%;
     height: 90vh;
+
     background-color: var(--primary-color);
+}
+
+#depoimentos header h2 {
+    padding-top: 6.7rem;
+
+    color: var(--white);
+}
+
+#depoimentos header .line path[stroke*="#00AFEF"]{
+    stroke: var(--white);
+}
+
+#depoimentos .mask-image img{
+    width: 8.8rem;
+    height: 8.8rem;
+    border-radius: 50%;
+}
+
+#depoimentos :is(.aspas-left, .aspas-right){
+    position: absolute;
+
+    opacity: 0.3;
+}
+
+#depoimentos .aspas-left{   
+    top: 0;
+    left: 0;
+}
+#depoimentos .aspas-right{    
+    bottom: 0;
+    right: 0;
+}
+
+#depoimentos .depoimentos-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#depoimentos .depoimentos-content p{
+    width: min(29rem, 80%);
+    margin-block: 2.1rem;
+
+    font-style: italic;
+    font-weight: var(--medium);
+    font-size: var(--h4-font-size);
+    line-height: 180%;
+    text-align: center;
+    text-transform: capitalize;
+
+    color: var(--white);
 }
 
 
