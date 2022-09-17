@@ -635,8 +635,14 @@ body.expended .header-right .menu-close{
     opacity: 0; 
 }
 
-.swiper-pagination-bullet{
+#banner-slider .swiper-pagination-bullet{
     background-color: var(--dark-light);
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+}
+#banner-slider .swiper-pagination-bullet-active{
+    background-color: var(--medium-dark);
     width: 12px;
     height: 12px;
 }
@@ -688,7 +694,7 @@ body.expended .header-right .menu-close{
     align-items: center;
 }
 
-#depoimentos .depoimentos-content p{
+#depoimentos .depoimentos-content :is(p, span){
     width: min(29rem, 80%);
     margin-block: 2.1rem;
 
@@ -698,10 +704,31 @@ body.expended .header-right .menu-close{
     line-height: 180%;
     text-align: center;
     text-transform: capitalize;
-
+    text-shadow: 0 0 2px var(--dark-dark);
     color: var(--white);
 }
 
+#depoimentos .depoimentos-content h4{   
+    font-style: italic;
+    font-weight: var(--bold);
+    font-size: var(--h4-font-size);
+    text-align: center;
+    text-transform: capitalize; 
+    color: var(--white);
+    text-shadow: 0 0 3px var(--dark-dark);
+}
+
+#depoimentos .swiper-pagination-bullet{
+    background-color: var(--white);
+    opacity: 0.7;
+    width: 12px;
+    height: 12px;
+}
+#depoimentos .swiper-pagination-bullet-active{
+    background-color: var(--dark-light);
+    width: 12px;
+    height: 12px;
+}
 
 
 
