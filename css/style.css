@@ -729,7 +729,63 @@ body.expended .header-right .menu-close{
 }
 
 /*=============== DESCONTO ==========================*/
+#desconto .desconto-slide-content{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+}
 
+#desconto .swiper-slide img{
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    object-position: 40%;
+}
+
+#desconto .desconto-gradiente{
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(180deg,
+                                         red,
+                                         blue);
+}
+
+#desconto .swiper-slide .desconto-content{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    z-index: 10;
+}
+
+#desconto .swiper-slide .desconto-content h5{
+    font-size: 3.4rem;
+    font-weight: var(--regular);     
+    text-align: left;
+    text-transform: capitalize;
+    color: var(--white);
+}
+
+#desconto .swiper-slide .desconto-content span{    
+    padding-right: 1rem;
+
+    font-weight: var(--light);
+    font-size: var(--h4-font-size);
+    text-align: left;
+    text-transform: capitalize; 
+    color: var(--medium-dark);
+}
+
+#desconto .swiper-slide .desconto-content p{    
+    padding-block: 1rem;
+    font-weight: var(--medium-regular);
+    font-size: var(--h4-font-size);
+    text-align: left;
+    text-transform: capitalize;
+    color: var(--white);
+}
 
 
 
