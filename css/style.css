@@ -753,16 +753,16 @@ body.expended .header-right .menu-close{
     object-fit: cover;    
 }
 
-#desconto .swiper-slide:nth-child(1) img{
+#desconto .swiper-slide:nth-child(2) img{
     object-position: 40%;
 }
-#desconto .swiper-slide:nth-child(2) img{
+#desconto .swiper-slide:nth-child(3) img{
     object-position: 70%;
 }
-#desconto .swiper-slide:nth-child(3) img{
+#desconto .swiper-slide:nth-child(4) img{
     object-position: 50%;
 }
-#desconto .swiper-slide:nth-child(4) img{
+#desconto .swiper-slide:nth-child(5) img{
     object-position: 25%;
 }
 
@@ -854,6 +854,7 @@ body.expended .header-right .menu-close{
     height: 12px;
 }
 
+/*=============== PLANOS ACESSÍVEIS  ==========================*/
 
 
 
