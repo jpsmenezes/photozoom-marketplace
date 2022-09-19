@@ -440,7 +440,7 @@ body.expended .header-right .menu-close{
 
 #pictures .photo-content{
     position: absolute;
-    top: 50vh;
+    bottom: 10%;
     left: 10%;
     z-index: 10;  
 
@@ -695,7 +695,7 @@ body.expended .header-right .menu-close{
 }
 
 #depoimentos .depoimentos-content :is(p, span){
-    width: min(29rem, 80%);
+    width:80%;
     margin-block: 2.1rem;
 
     font-style: italic;
