@@ -652,7 +652,7 @@ body.expended .header-right .menu-close{
     position: relative;
 
     width: 100%;
-    height: 90vh;
+    height: 60rem;
 
     background-color: var(--primary-color);
 }
