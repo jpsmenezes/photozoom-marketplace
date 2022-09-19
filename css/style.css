@@ -738,8 +738,20 @@ body.expended .header-right .menu-close{
 #desconto .swiper-slide img{
     width: 100%;
     height: 90vh;
-    object-fit: cover;
+    object-fit: cover;    
+}
+
+#desconto .swiper-slide:nth-child(2) img{
     object-position: 40%;
+}
+#desconto .swiper-slide:nth-child(3) img{
+    object-position: 70%;
+}
+#desconto .swiper-slide:nth-child(4) img{
+    object-position: 50%;
+}
+#desconto .swiper-slide:nth-child(5) img{
+    object-position: 25%;
 }
 
 #desconto .desconto-gradiente{
@@ -756,7 +768,7 @@ body.expended .header-right .menu-close{
 
 #desconto .swiper-slide .desconto-content{
     position: absolute;
-    bottom: 15%;
+    bottom: 10%;
     left: 10%;
     z-index: 10;
 }
