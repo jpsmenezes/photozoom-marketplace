@@ -703,8 +703,7 @@ body.expended .header-right .menu-close{
     font-size: var(--h4-font-size);
     line-height: 180%;
     text-align: center;
-    text-transform: capitalize;
-    text-shadow: 0 0 2px var(--dark-dark);
+    text-transform: capitalize;    
     color: var(--white);
 }
 
@@ -714,8 +713,7 @@ body.expended .header-right .menu-close{
     font-size: var(--h4-font-size);
     text-align: center;
     text-transform: capitalize; 
-    color: var(--white);
-    text-shadow: 0 0 3px var(--dark-dark);
+    color: var(--white);    
 }
 
 #depoimentos .swiper-pagination-bullet{
@@ -730,6 +728,7 @@ body.expended .header-right .menu-close{
     height: 12px;
 }
 
+/*=============== DESCONTO ==========================*/
 
 
 
