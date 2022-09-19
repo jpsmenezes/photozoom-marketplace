@@ -41,5 +41,16 @@ document.querySelector('.nav-btn-login').addEventListener('click', closeMenu);
       clickable: true,
     },    
   });
+  
+  // DESCONTO-SLIDE 
+  var bannerSlide = new Swiper(".desconto-slide-content", {
+    slidesPerView: 1,
+    grabCursor:true,    
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },    
+  });
 
 
