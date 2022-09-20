@@ -782,6 +782,7 @@ body.expended .header-right .menu-close{
     position: absolute;
     bottom: 10%;
     left: 10%;
+    right: 10%;
     z-index: 10;
 }
 
@@ -790,7 +791,7 @@ body.expended .header-right .menu-close{
     
     font-size: 3.4rem;
     font-weight: var(--regular);     
-    text-align: left;
+    text-align: center;
     text-transform: capitalize;
     color: var(--white);
 }

@@ -18,8 +18,7 @@ document.querySelector('.nav-btn-login').addEventListener('click', closeMenu);
 
 // BANNER-SLIDE 
   const bannerSlide = new Swiper(".banner-slider-container", {
-    slidesPerView: 1,
-    grabCursor:true,    
+    slidesPerView: 1,        
     loop: true,
     pagination: {
       el: ".swiper-pagination",
@@ -33,8 +32,7 @@ document.querySelector('.nav-btn-login').addEventListener('click', closeMenu);
 
   // DEPOIMENTO-SLIDE 
   const depoimentoSlide = new Swiper(".depoimentos-slider-container", {
-    slidesPerView: 1,
-    grabCursor:true,    
+    slidesPerView: 1,        
     loop: true,
     pagination: {
       el: ".swiper-pagination",
@@ -44,8 +42,7 @@ document.querySelector('.nav-btn-login').addEventListener('click', closeMenu);
   
   // DESCONTO-SLIDE 
   const descontoSlide = new Swiper(".desconto-slide-content", {
-    slidesPerView: 1,
-    grabCursor:true,    
+    slidesPerView: 1,        
     loop: true,
     pagination: {
       el: ".swiper-pagination",
