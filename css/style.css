@@ -858,14 +858,14 @@ body.expended .header-right .menu-close{
 
 #planosAcessiveis header{    
     width: 70%;
-    padding: 5rem 0 2;
+    padding: 5rem 0 2rem;
 
     margin-inline: auto;
 }
 
 #planosAcessiveis .personal,
 #planosAcessiveis .business,
-#planosAcessiveis .enterpriser{
+#planosAcessiveis .enterprise{
     padding-inline: 4rem;
 }
 #planosAcessiveis .business{
