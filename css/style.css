@@ -944,6 +944,13 @@ body.expended .header-right .menu-close{
 }
 
 /*=============== COLABORADORES ==========================*/
+#colaboradores .colaboradores-slider{
+    width: 100%;
+    height: 82rem;
+}
+#colaboradores header{
+    padding-bottom: 2rem;
+}
 #colaboradores .swiper-slide{
     display: flex;
     flex-direction: column;
@@ -979,3 +986,31 @@ body.expended .header-right .menu-close{
 #colaboradores .rede-social-icon i:hover{
     color: var(--primary-color);
 }
+
+#colaboradores .col-btn::after,
+#colaboradores .col-btn::before{    
+    font-size: 1.5rem;
+    font-weight: var(--bold);
+    color: var(--medium-dark);     
+}
+
+#colaboradores .swiper-button-prev,
+#colaboradores .swiper-button-next{
+  top: initial;
+  bottom: 8rem;
+
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--medium-light);
+  border-radius: .5rem;
+  background-color: var(--white);
+  padding: 6px;  
+}
+    
+#colaboradores .swiper-button-prev{
+    left: calc(50% - 4rem);
+  }
+  
+#colaboradores .swiper-button-next{
+    right: calc(50% - 4rem);
+  }

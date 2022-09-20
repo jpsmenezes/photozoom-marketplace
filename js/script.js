@@ -17,7 +17,7 @@ document.querySelector('.nav-btn-login').addEventListener('click', closeMenu);
 
 
 // BANNER-SLIDE 
-  var bannerSlide = new Swiper(".banner-slider-container", {
+  const bannerSlide = new Swiper(".banner-slider-container", {
     slidesPerView: 1,
     grabCursor:true,    
     loop: true,
@@ -32,7 +32,7 @@ document.querySelector('.nav-btn-login').addEventListener('click', closeMenu);
   });
 
   // DEPOIMENTO-SLIDE 
-  var bannerSlide = new Swiper(".depoimentos-slider-container", {
+  const depoimentoSlide = new Swiper(".depoimentos-slider-container", {
     slidesPerView: 1,
     grabCursor:true,    
     loop: true,
@@ -43,7 +43,7 @@ document.querySelector('.nav-btn-login').addEventListener('click', closeMenu);
   });
   
   // DESCONTO-SLIDE 
-  var bannerSlide = new Swiper(".desconto-slide-content", {
+  const descontoSlide = new Swiper(".desconto-slide-content", {
     slidesPerView: 1,
     grabCursor:true,    
     loop: true,
@@ -53,4 +53,16 @@ document.querySelector('.nav-btn-login').addEventListener('click', closeMenu);
     },    
   });
 
-
+// COLABORADORES-SLIDE 
+const colaboradoresSlide = new Swiper(".colaboradores-slider", {
+  slidesPerView: 1,      
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
