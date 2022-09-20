@@ -942,3 +942,40 @@ body.expended .header-right .menu-close{
     background-color: var(--white);
     color: var(--primary-color);
 }
+
+/*=============== COLABORADORES ==========================*/
+#colaboradores .swiper-slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+#colaboradores h3{
+    padding: 2rem 0 1rem;
+    font-weight: var(--medium-regular);
+    font-size: 2.6rem;
+    color: var(--dark-light);
+}
+
+#colaboradores span{
+    padding-bottom: 1rem;
+    font-weight: var(--medium);
+    font-size: var(--p-font-size);
+    color: var(--medium-dark);
+}
+#colaboradores .rede-social-icon{
+    display: flex;
+    gap: 1rem;
+}
+#colaboradores .rede-social-icon i{
+    font-size: 2rem;
+    color: var(--medium-dark);
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+#colaboradores .rede-social-icon i:hover{
+    color: var(--primary-color);
+}
