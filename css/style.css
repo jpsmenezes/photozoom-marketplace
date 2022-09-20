@@ -791,7 +791,7 @@ body.expended .header-right .menu-close{
     
     font-size: 3.4rem;
     font-weight: var(--regular);     
-    text-align: center;
+    text-align: left;
     text-transform: capitalize;
     color: var(--white);
 }
