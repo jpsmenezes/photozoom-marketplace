@@ -919,8 +919,7 @@ body.expended .header-right .menu-close{
     width: 15.5rem;
     height: 4.2rem;
     background-color: var(--white);
-    border: 2px solid var(--primary-color);
-    padding-left: 1rem;
+    border: 2px solid var(--primary-color);    
     margin-bottom: 6rem;
 
     color: var(--primary-color);
