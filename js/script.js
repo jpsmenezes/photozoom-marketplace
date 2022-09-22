@@ -32,12 +32,22 @@ document.querySelector('.nav-btn-login').addEventListener('click', closeMenu);
 
   // DEPOIMENTO-SLIDE 
   const depoimentoSlide = new Swiper(".depoimentos-slider-container", {
+    //PARAMETROS
     slidesPerView: 1,        
     loop: true,
+    initialSlide: 1,
+
+     //PAGINAÇÃO
     pagination: {
       el: ".swiper-pagination",
-      clickable: true,
+      clickable: true,     
     },    
+
+    //AUTOPLAY
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction:false,
+    },       
   });
   
   // DESCONTO-SLIDE 
