@@ -1169,3 +1169,8 @@ body.expended .header-right .menu-close{
 #atualizacoes input[type=submit]:hover{
     background-color: var(--dark-light);
 }
+
+#atualizacoes input[type=text]:focus,
+#atualizacoes input[type=email]:focus{
+    outline: 2px solid var(--primary-color);
+}
