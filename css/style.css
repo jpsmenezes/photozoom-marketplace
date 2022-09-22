@@ -1174,3 +1174,49 @@ body.expended .header-right .menu-close{
 #atualizacoes input[type=email]:focus{
     outline: 2px solid var(--primary-color);
 }
+
+/*=============== FOOTER ==========================*/
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    padding: 5rem 0;
+    background-color: var(--dark-light);
+}
+
+footer .social-media{
+    display: flex;
+    gap: 1rem;
+}
+
+footer .social-media i{
+    font-size: 4rem;
+    color: var(--medium-dark);
+
+    transition: .3s;
+}
+
+footer .social-media i:hover{
+    color:hsla(227, 9%, 62%, 0.341);
+}
+
+footer :is(p, cite){
+    font-size: 1.2rem;
+    color: var(--medium-dark);
+}
+
+footer cite{
+    font-weight: var(--regular);
+    font-style: normal;
+}
+
+footer .footer-author{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    padding-top: 2rem;
+}
+
