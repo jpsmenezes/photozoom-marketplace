@@ -1129,9 +1129,43 @@ body.expended .header-right .menu-close{
 
 #atualizacoes p{
     width: 80%;
+    margin-bottom: 4.5rem;
     font-weight: var(--light);
     font-size: var(--p-font-size);
     line-height: 170%;
     text-align: center;
     color: var(--medium-dark);
+}
+
+#atualizacoes input[type=text],
+#atualizacoes input[type=email],
+#atualizacoes input[type=submit]{
+    width: 100%;
+    height: 4rem;
+}
+
+#atualizacoes input[type=text],
+#atualizacoes input[type=email]{
+    border: none;
+    padding-left: 2rem;
+    margin-bottom: 2.3rem;
+    border-radius: .5rem;
+}
+
+#atualizacoes input[type=submit]{
+    margin-bottom: 9.3rem;
+    background-color: var(--primary-color);
+    border: none;
+
+    font-size: var(--h4-font-size);
+    color: var(--white);
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+#atualizacoes input[type=submit]:hover{
+    background-color: var(--dark-light);
 }
