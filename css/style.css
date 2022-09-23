@@ -352,6 +352,9 @@ body.expended .header-right .menu-close{
 }
 
 /*=============== HERO ======================*/
+#hero{
+    height: 100vh;
+}
 #hero :is(h1,h3){
     color: var(--white); 
     text-align: center;

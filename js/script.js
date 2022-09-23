@@ -26,6 +26,13 @@ const scrollUp = () =>{
 }
 window.addEventListener('scroll', scrollUp);
 
+//=============== DARK MODE ===============
+const themeButton = document.querySelector('#theme-button'); //botão dark mode
+const darkTheme = 'dark-theme'; //classe que vai no body para acionar o dark mode
+const iconTheme = 'bx-sun'; //string para o icone do sol
+
+const selectedTheme = localStorage.getItem('selected-theme'); //Ler dados do armazenamento
+const selectedIcon = localStorage.getItem('selected-icon'); //Ler dados do armazenamento
 
 
 // BANNER-SLIDE 
