@@ -104,8 +104,12 @@ li{
 
 /*============== VARIABLES DARK THEME ============*/
 body.dark-theme #about p,
-body.dark-theme #about h2{
-    color: var(--white);
+body.dark-theme #about h2,
+body.dark-theme #tudoQueVocePrecisa h2,
+#tudoQueVocePrecisa .options-text h4,
+#tudoQueVocePrecisa .options-text p,
+body.dark-theme #categorias{
+    color: var(--medium-light);
 }
 
 body.dark-theme > header{
@@ -134,11 +138,37 @@ body.dark-theme #hero input[type=submit]:hover{
 }
 
 body.dark-theme #about button.btn-premium,
-body.dark-theme #about{
+body.dark-theme #about,
+body.dark-theme #tudoQueVocePrecisa,
+body.dark-theme #planosAcessiveis,
+body.dark-theme #planosAcessiveis .personal,
+body.dark-theme #planosAcessiveis .enterprise,
+body.dark-theme #planosAcessiveis .personal button,
+body.dark-theme #planosAcessiveis .enterprise button{
     background-color: var(--dark-light);
 }
 
+body.dark-theme #categorias{
+    background-color:hsla(226, 12%, 44%, 1);    
+}
 
+body.dark-theme #categorias ul > li a,
+body.dark-theme #planosAcessiveis .personal li.inactive{
+    color: var(--medium-dark);
+}
+
+body.dark-theme #planosAcessiveis .personal h5,
+body.dark-theme #planosAcessiveis .enterprise h5,
+body.dark-theme #planosAcessiveis h2,
+body.dark-theme #planosAcessiveis .personal li,
+body.dark-theme #planosAcessiveis .enterprise li{
+    color: var(--medium-light);
+}
+
+body.dark-theme #planosAcessiveis .personal button:hover,
+body.dark-theme #planosAcessiveis .enterprise button:hover{
+    background-color: var(--primary-color);
+}
 
 /*=============== HEADER ======================*/
 body > header{
@@ -519,7 +549,7 @@ body.expended .header-right .menu-close{
     flex-direction: column;
     align-items: center;
 
-    margin-top: 5rem;
+    padding-top: 5rem;
 }
 #tudoQueVocePrecisa h2{
     width: 70%;
@@ -556,7 +586,7 @@ body.expended .header-right .menu-close{
     margin-bottom: 5rem;
 }
 
-.options-text h4{
+#tudoQueVocePrecisa .options-text h4{
     font-size: var(--h4-font-size);
     font-weight: var( --medium-regular);
 
