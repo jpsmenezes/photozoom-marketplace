@@ -1239,7 +1239,7 @@ footer .footer-author{
     border-radius: 50%;
 
     color: var(--white);
-    font-size: 2.5rem;
+    font-size: 2rem;
 
     transition: .3s;    
 }

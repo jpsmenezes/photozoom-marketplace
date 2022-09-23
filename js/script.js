@@ -11,9 +11,11 @@ const closeMenu = () => {
 document.querySelector('.menu-open').addEventListener('click', openMenu);
 document.querySelector('.menu-close').addEventListener('click', closeMenu);
 
+
 //FECHAR O MENU MOBILE AO CLICAR EM QUALQUER LINK
 document.querySelectorAll('.linkMenu').forEach(link => link.addEventListener('click', closeMenu));
 document.querySelector('.nav-btn-login').addEventListener('click', closeMenu);
+
 
 //=============== SHOW SCROLL UP ===============
 const scrollUp = () =>{
@@ -23,6 +25,8 @@ const scrollUp = () =>{
 						      : scrollUp.classList.remove('show-scroll');  
 }
 window.addEventListener('scroll', scrollUp);
+
+
 
 // BANNER-SLIDE 
   const bannerSlide = new Swiper(".banner-slider-container", {
