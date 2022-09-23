@@ -1092,7 +1092,7 @@ body.expended .header-right .menu-close{
 #colaboradores .swiper-button-prev,
 #colaboradores .swiper-button-next{
   top: initial;
-  bottom: 7rem;
+  bottom: 5.7rem;
 
   width: 30px;
   height: 30px;
@@ -1116,6 +1116,10 @@ body.expended .header-right .menu-close{
 #colaboradores .swiper-button-next{
     right: calc(50% - 4rem);
   }
+
+#colaboradores .swiper-pagination{
+    bottom: 17px;
+}
 
 #colaboradores .swiper-pagination-bullet{
     width: 12px;
