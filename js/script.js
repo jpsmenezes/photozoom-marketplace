@@ -15,6 +15,14 @@ document.querySelector('.menu-close').addEventListener('click', closeMenu);
 document.querySelectorAll('.linkMenu').forEach(link => link.addEventListener('click', closeMenu));
 document.querySelector('.nav-btn-login').addEventListener('click', closeMenu);
 
+//=============== SHOW SCROLL UP ===============
+const scrollUp = () =>{
+	const scrollUp = document.querySelector('#scroll-up');
+      
+	scrollY >= 2000 ? scrollUp.classList.add('show-scroll')
+						      : scrollUp.classList.remove('show-scroll');  
+}
+window.addEventListener('scroll', scrollUp);
 
 // BANNER-SLIDE 
   const bannerSlide = new Swiper(".banner-slider-container", {
