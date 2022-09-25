@@ -248,7 +248,7 @@ header .header-right{
    align-items: center;
 }
 
-.header-right .moon{   
+.header-right .btn-theme{   
     margin-right: 4.5rem;
 
     font-size: 2.2rem;  
@@ -259,7 +259,7 @@ header .header-right{
     transition: .3s;
 }
 
-.header-right .moon:hover{
+.header-right .btn-theme:hover{
     color: var(--primary-color);
 }
 

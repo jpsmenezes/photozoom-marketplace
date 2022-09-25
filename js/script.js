@@ -41,9 +41,9 @@ const selectedIcon = localStorage.getItem('selected-icon');
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx bx-moon' : 'bx bx-sun';
 
-if(selectedTheme){  
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);  
-  themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme);
+if (selectedTheme) {  
+  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);   
+  themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme); 
 }
 
 themeButton.addEventListener('click', ()=>{   
@@ -130,6 +130,12 @@ transition.reveal(`
     #about .btn__button, 
     #about h2, 
     #about .line, 
-    #about p `);
+    #about p,
+    #tudoQueVocePrecisa header,
+    #tudoQueVocePrecisa .options,
+    #planosAcessiveis header,
+    #planosAcessiveis .personal,
+    #planosAcessiveis .business,
+    #planosAcessiveis .enterprise`);
 
 transition.reveal(`#pictures .photo-content`,{origin: 'right'})
