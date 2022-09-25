@@ -1408,6 +1408,10 @@ footer .footer-author{
 
 /*=============== BREAKPOINTS ===============*/
 @media screen and (max-width: 350px){
+    .header-right .btn-theme{
+        margin-right: 2.5rem;
+    }
+
     #colaboradores .swiper-slide{        
         align-items: initial;    
     }
@@ -1415,5 +1419,23 @@ footer .footer-author{
     #colaboradores .swiper-slide span,
     #colaboradores .swiper-slide div{
         margin: 0 auto;
+    }
+
+    @media screen and (max-width: 320px){        
+        #about button.planoIdeal{
+            font-size: 1.1rem;
+        }
+
+        #depoimentos .depoimentos-content :is(p, span){
+            font-size: var(--p-font-size);
+        }
+
+        #planosAcessiveis li{
+            font-size: 1.3rem;
+        }
+
+        #colaboradores .colaboradores-slider{
+            height: 115vh;
+        }
     }
 }
