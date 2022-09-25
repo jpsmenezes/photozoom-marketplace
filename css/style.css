@@ -349,6 +349,7 @@ body.expended nav ul li a{
 
     transition: .2s;
 }
+
 body.expended nav ul li a:hover{
     background-color: var(--primary-color);
 }
@@ -356,6 +357,7 @@ body.expended nav ul li a:hover{
 body.expended .header-right .menu-open{   
    display: none;  
 }
+
 body.expended .header-right .menu-close{
     display: block;
    color: var(--medium-dark);
