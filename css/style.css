@@ -48,7 +48,9 @@ html{
 
 body{
     font-family: var(--body-font);
-    font-size: var(--p-font-size);      
+    font-size: var(--p-font-size);    
+    
+    transition: .3s; /* For animation dark mode */
 }
 
 h1{   
@@ -181,6 +183,10 @@ body.dark-theme #colaboradores .swiper-button-next{
     background-color:hsla(226, 12%, 44%, 1);
     border-color: var(--medium-dark);
 }
+body.dark-theme #colaboradores .swiper-button-prev:hover,
+body.dark-theme #colaboradores .swiper-button-next:hover{
+    background-color: var(--medium-light);
+}
 
 body.dark-theme footer{
     background-color: var(--dark-dark);
@@ -197,6 +203,8 @@ body > header{
     width: 100%;
     background: var(--white);  
     box-shadow: 0 5px 3px hsla(240, 11%, 30%, 0.065);
+
+    transition: .3s; /* For animation dark mode */
 }
 
 header .container{
@@ -390,7 +398,7 @@ body.expended .header-right .menu-close{
     display: flex;
     justify-content: center;
 
-    width: 100%;       
+    width: 100%;           
 }
 #hero input[type=text]{
    width: clamp(2.34rem, 70%, 50.5rem);
@@ -401,6 +409,8 @@ body.expended .header-right .menu-close{
    background-position: 10px 10px; 
    background-repeat: no-repeat;
    padding: 12px 20px 12px 40px;
+
+   transition: .3s; /* For animation dark mode */
 }
 
 #hero input[type=text]:focus{
@@ -430,11 +440,16 @@ body.expended .header-right .menu-close{
 }
 
 /*=============== ABOUT ======================*/
+#about{
+    background-color: var(--white);
+    transition: .3s;
+}
 
 #about .btn__button{
     display: flex;
     justify-content: center;
 }
+
 #about button.planoIdeal{
     width: clamp(26.6rem, 90%, 50.1rem);
     margin-block: var(--margin-tittle);
@@ -476,6 +491,7 @@ body.expended .header-right .menu-close{
     margin-bottom: var(--margin-tittle);
     color: var(--dark-light);
 }
+
 #about button.btn-premium{
     display: flex;
     justify-content: center;
@@ -553,17 +569,24 @@ body.expended .header-right .menu-close{
     color: var(--white);   
     text-shadow: 0 0 5px var(--dark-dark);
 }
+
 #pictures h3{
     width: 21rem;
 
     line-height: 134.19%;
 }
+
 #pictures p{   
     line-height: 167.19%;
     font-weight: 400;
 }
 
 /*=============== TUDO QUE VC PRECISA ======================*/
+#tudoQueVocePrecisa{
+    background-color: var(--white);
+    transition: .3s;
+}
+
 #tudoQueVocePrecisa header{
     display: flex;
     flex-direction: column;
@@ -571,6 +594,7 @@ body.expended .header-right .menu-close{
 
     padding-top: 5rem;
 }
+
 #tudoQueVocePrecisa h2{
     width: 70%;
     padding-top: var(--margin-tittle);
@@ -619,7 +643,9 @@ body.expended .header-right .menu-close{
    justify-content: center;
       
    width: 100%;  
-   background-color: var(--bg-light)  
+   background-color: var(--bg-light);  
+
+   transition: .3s;
 }
 
 #categorias h2{
@@ -949,6 +975,9 @@ body.expended .header-right .menu-close{
 }
 
 /*=============== PLANOS ACESSÍVEIS  ==========================*/
+#planosAcessiveis{
+    transition: .3s;
+}
 #planosAcessiveis header{    
     width: 70%;
     padding: 5rem 0 2rem;
@@ -961,9 +990,11 @@ body.expended .header-right .menu-close{
 #planosAcessiveis .enterprise{
     padding-inline: 4rem;
 }
+
 #planosAcessiveis .business{
     background-color: var(--bg-light);
 }
+
 #planosAcessiveis h5{
     padding-block: 3rem;
 
@@ -977,20 +1008,24 @@ body.expended .header-right .menu-close{
     font-weight: var(--bold);
     color: var(--primary-color);
 }
+
 #planosAcessiveis span.valor > span{
     font-size: 1.6rem;
     font-weight: var(--medium);
     color: var(--medium-dark);
 }
+
 #planosAcessiveis .line-division{
     width: 100%;
     height: 0.15rem;
     background-color: var(--medium-light);
     margin-block: 2rem;
 }
+
 #planosAcessiveis ul{
     padding-top: 1.5rem;
 }
+
 #planosAcessiveis li{
     padding-bottom: 3.5rem;
 
@@ -998,11 +1033,13 @@ body.expended .header-right .menu-close{
     font-weight: var(--light);
     color: var(--dark-light);
 }
+
 #planosAcessiveis i{
     color: var(--primary-color);
     padding-right: 0.6rem;
     
 }
+
 #planosAcessiveis :is(i.inactive, li.inactive) {
     color: var(--medium-dark);
 }
@@ -1022,20 +1059,26 @@ body.expended .header-right .menu-close{
 
     transition: .3s;
 }
+
 #planosAcessiveis button:hover{
    background-color: var(--primary-color);
    color: var(--white);
 }
+
 #planosAcessiveis .business button{
     background-color: var(--primary-color);
     color: var(--white);
 }
+
 #planosAcessiveis .business button:hover{
     background-color: var(--white);
     color: var(--primary-color);
 }
 
 /*=============== COLABORADORES ==========================*/
+#colaboradores{   
+    transition: .3s;
+}
 #colaboradores .colaboradores-slider{
     width: 100%;
     height: 82rem;
@@ -1070,10 +1113,12 @@ body.expended .header-right .menu-close{
     font-size: var(--p-font-size);
     color: var(--medium-dark);
 }
+
 #colaboradores .rede-social-icon{
     display: flex;
     gap: 1rem;
 }
+
 #colaboradores .rede-social-icon i{
     font-size: 2rem;
     color: var(--medium-dark);
@@ -1111,16 +1156,16 @@ body.expended .header-right .menu-close{
 
 #colaboradores .swiper-button-prev:hover,
 #colaboradores .swiper-button-next:hover{
-    background-color: var(--medium-light);
+    background-color: var(--dark-light);
 }
     
 #colaboradores .swiper-button-prev{
     left: calc(50% - 4rem);
-  }
+}
   
 #colaboradores .swiper-button-next{
     right: calc(50% - 4rem);
-  }
+}
 
 #colaboradores .swiper-pagination{
     bottom: 17px;
@@ -1132,6 +1177,7 @@ body.expended .header-right .menu-close{
     background-color: var(--medium-dark);
     opacity: 0.7;
 }
+
 #colaboradores .swiper-pagination-bullet-active{
     width: 12px;
     height: 12px;
@@ -1211,6 +1257,8 @@ body.expended .header-right .menu-close{
 /*=============== ATUALIZAÇÕES ==========================*/
 #atualizacoes{
     background-color: var(--bg-light);
+
+    transition: .3s;
 }
 
 #atualizacoes .atualizacao-content{
@@ -1286,6 +1334,8 @@ footer{
     width: 100%;
     padding: 5rem 0;
     background-color: var(--dark-light);
+
+    transition: .3s;
 }
 
 footer .social-media{
