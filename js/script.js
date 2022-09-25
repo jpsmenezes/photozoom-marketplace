@@ -112,3 +112,24 @@ const colaboradoresSlide = new Swiper(".colaboradores-slider", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+
+//=============== SCROLLREVEAL =======================================
+const transition = ScrollReveal({
+  origin: 'bottom',
+  distance: '60px',
+  duration: 2000,
+  delay: 130,
+});
+
+transition.reveal(`.hero-content h1`,{origin: 'top'});
+
+transition.reveal(` 
+    .hero-content h3, 
+    #hero-form, 
+    #about .btn__button, 
+    #about h2, 
+    #about .line, 
+    #about p `);
+
+transition.reveal(`#pictures .photo-content`,{origin: 'right'})

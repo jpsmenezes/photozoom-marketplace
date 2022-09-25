@@ -48,7 +48,7 @@ html{
 
 body{
     font-family: var(--body-font);
-    font-size: var(--p-font-size);    
+    font-size: var(--p-font-size);      
 }
 
 h1{   
@@ -172,7 +172,7 @@ body.dark-theme #colaboradores h3{
 
 body.dark-theme #planosAcessiveis .personal button:hover,
 body.dark-theme #planosAcessiveis .enterprise button:hover,
-body.dark-theme #about button:hover{
+body.dark-theme #about button.btn-premium:hover{
     background-color: var(--primary-color);
 }
 
