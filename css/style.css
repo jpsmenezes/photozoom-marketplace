@@ -50,6 +50,8 @@ body{
     font-family: var(--body-font);
     font-size: var(--p-font-size);    
     
+    overflow-x: hidden;
+
     transition: .3s; /* For animation dark mode */
 }
 
@@ -453,7 +455,7 @@ body.expended .header-right .menu-close{
 }
 
 #about button.planoIdeal{
-    width: clamp(26.6rem, 90%, 50.1rem);
+    width: min(100%, 50.1rem);
     margin-block: var(--margin-tittle);
     padding: 1rem 2rem 1rem 6rem;   
     border-radius: 3rem;
@@ -1405,3 +1407,13 @@ footer .footer-author{
   }
 
 /*=============== BREAKPOINTS ===============*/
+@media screen and (max-width: 350px){
+    #colaboradores .swiper-slide{        
+        align-items: initial;    
+    }
+    #colaboradores .swiper-slide h3,
+    #colaboradores .swiper-slide span,
+    #colaboradores .swiper-slide div{
+        margin: 0 auto;
+    }
+}
