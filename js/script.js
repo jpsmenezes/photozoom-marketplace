@@ -12,12 +12,14 @@ document.querySelector('.menu-open').addEventListener('click', openMenu);
 document.querySelector('.menu-close').addEventListener('click', closeMenu);
 
 
+
 //FECHAR O MENU MOBILE AO CLICAR EM QUALQUER LINK
 document.querySelectorAll('.linkMenu').forEach(link => link.addEventListener('click', closeMenu));
 document.querySelector('.nav-btn-login').addEventListener('click', closeMenu);
 
 
-//=============== SHOW SCROLL UP ===============
+
+//=============== SHOW SCROLL UP ========================================
 const scrollUp = () =>{
 	const scrollUp = document.querySelector('#scroll-up');
       
@@ -26,15 +28,35 @@ const scrollUp = () =>{
 }
 window.addEventListener('scroll', scrollUp);
 
-//=============== DARK MODE ===============
-const themeButton = document.querySelector('#theme-button'); //botão dark mode
-const darkTheme = 'dark-theme'; //classe que vai no body para acionar o dark mode
-const iconTheme = 'bx-sun'; //string para o icone do sol
-
-const selectedTheme = localStorage.getItem('selected-theme'); //Ler dados do armazenamento
-const selectedIcon = localStorage.getItem('selected-icon'); //Ler dados do armazenamento
 
 
+//=============== DARK MODE =============================================
+const themeButton = document.querySelector('#theme-button');
+const darkTheme = 'dark-theme'; 
+const iconTheme = 'bx-sun'; 
+
+const selectedTheme = localStorage.getItem('selected-theme'); 
+const selectedIcon = localStorage.getItem('selected-icon'); 
+
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx bx-moon' : 'bx bx-sun';
+
+if(selectedTheme){  
+  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);  
+  themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme);
+}
+
+themeButton.addEventListener('click', ()=>{   
+  document.body.classList.toggle(darkTheme);
+  themeButton.classList.toggle(iconTheme);
+  
+  localStorage.setItem('selected-theme', getCurrentTheme());
+  localStorage.setItem('selected-icon', getCurrentIcon());
+});
+
+
+
+//=============== SWIPER JS =========================================
 // BANNER-SLIDE 
   const bannerSlide = new Swiper(".banner-slider-container", {
     slidesPerView: 1,        
@@ -55,13 +77,11 @@ const selectedIcon = localStorage.getItem('selected-icon'); //Ler dados do armaz
     slidesPerView: 1,        
     loop: true,
     initialSlide: 1,
-
      //PAGINAÇÃO
     pagination: {
       el: ".swiper-pagination",
       clickable: true,     
-    },    
-
+    },   
     //AUTOPLAY
     autoplay: {
       delay: 5000,

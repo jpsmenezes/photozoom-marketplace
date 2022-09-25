@@ -1,27 +1,32 @@
 /*=============== DARK LIGHT THEME ===============*/ 
-const themeButton = document.querySelector('#theme-button'); //botão dark mode
-const darkTheme = 'dark-theme'; //classe com variaveis para o dark mode
-const iconTheme = 'bx-sun'; //icone do sol
+const themeButton = document.querySelector('#theme-button'); //botão que aciona o dark mode
+const darkTheme = 'dark-theme'; //classe que vai ser add no body para acionar o dark mode
+const iconTheme = 'bx-sun'; //string para o icone do sol
+const selectedTheme = localStorage.getItem('selected-theme'); //obter dados armazenado na chave 'selected-theme'
+const selectedIcon = localStorage.getItem('selected-icon'); //obter dados armazenado na chave 'selected-icon'
 
-const selectedTheme = localStorage.getItem('selected-theme'); //Ler dados do armazenamento
-const selectedIcon = localStorage.getItem('selected-icon'); //Ler dados do armazenamento
-
-// We obtain the current theme that the interface has by validating the dark-theme class
-// Obtemos o tema atual que a interface possui validando a classe dark-theme
+//funcão que retorna qual é o tema autal que esta sendo utilizado, verificando se o body contein a classe 'darkTheme' e retorna uma string 'dark' ou 'light'
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+
+//funcão que retorna qual icone autal que esta sendo utilizado, verificando se o botão(themeButton) contein a classe que esta armazenada na variável(iconTheme) e retorna uma string 'bx bx-moon' ou 'bx bx-sun'
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx bx-moon' : 'bx bx-sun';
 
-if (selectedTheme) {  
+//ao abrir a pagina ele vai verificar no localStorage por meio da chave(selectedTheme) o tema e icone salvo pelo usuário 
+if(selectedTheme){
+  //condicional para adicionar ou remover a classe 'darkTheme' do body
   document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
-  themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme);
+
+  //condicional para adicionar ou remover a classe 'iconTheme' do 'themeButton'
+  themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme);
 }
 
-// Activate / deactivate the theme manually with the button
-themeButton.addEventListener('click', () => {
-    // Add or remove the dark / icon theme
-    document.body.classList.toggle(darkTheme);
-    themeButton.classList.toggle(iconTheme);
-    // We save the theme and the current icon that the user chose
-    localStorage.setItem('selected-theme', getCurrentTheme());
-    localStorage.setItem('selected-icon', getCurrentIcon());
+//ativar ou desativar o tema com o clique no botão
+themeButton.addEventListener('click', ()=>{  
+  //adicionar ou remover o 'darkTheme' ou 'iconTheme'
+  document.body.classList.toggle(darkTheme);
+  themeButton.classList.toggle(iconTheme);
+
+  //vamos salvar o tema e o icone que o usuário alterou no localStorage
+  localStorage.setItem('selected-theme', getCurrentTheme());
+  localStorage.setItem('selected-icon', getCurrentIcon());
 });
