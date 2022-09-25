@@ -102,7 +102,7 @@ li{
     margin-block: var(--margin-tittle);
 }
 
-/*============== VARIABLES DARK THEME ============*/
+/*============== DARK THEME =============================*/
 body.dark-theme #about p,
 body.dark-theme #about h2,
 body.dark-theme #tudoQueVocePrecisa h2,
@@ -132,8 +132,9 @@ body.dark-theme #hero input[type=text]{
     background-color: var(--dark-light);
 }
 
-body.dark-theme #hero input[type=submit]:hover{
-    background-color:var(--medium-light);
+body.dark-theme #hero input[type=submit]:hover,
+body.dark-theme #atualizacoes input[type=submit]:hover{
+    background-color:var(--medium-dark);
     color: var(--dark-light);
 }
 
@@ -170,7 +171,8 @@ body.dark-theme #colaboradores h3{
 }
 
 body.dark-theme #planosAcessiveis .personal button:hover,
-body.dark-theme #planosAcessiveis .enterprise button:hover{
+body.dark-theme #planosAcessiveis .enterprise button:hover,
+body.dark-theme #about button:hover{
     background-color: var(--primary-color);
 }
 
