@@ -1407,6 +1407,8 @@ footer .footer-author{
   }
 
 /*=============== BREAKPOINTS ===============*/
+
+/* For small devices */
 @media screen and (max-width: 350px){
     .header-right .btn-theme{
         margin-right: 2.5rem;
@@ -1442,4 +1444,9 @@ footer .footer-author{
         #colaboradores .colaboradores-slider{
             height: 115vh;
         }
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px){
+    
 }
