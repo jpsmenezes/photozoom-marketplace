@@ -1420,8 +1420,13 @@ footer .footer-author{
     #colaboradores .swiper-slide div{
         margin: 0 auto;
     }
-
-    @media screen and (max-width: 320px){        
+}
+@media screen and (max-width: 335px){
+    #colaboradores .colaboradores-slider{
+        height: 120vh;
+    }
+}
+@media screen and (max-width: 320px){        
         #about button.planoIdeal{
             font-size: 1.1rem;
         }
@@ -1437,5 +1442,4 @@ footer .footer-author{
         #colaboradores .colaboradores-slider{
             height: 115vh;
         }
-    }
 }
