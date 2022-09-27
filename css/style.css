@@ -492,7 +492,7 @@ body.expended .header-right .menu-close{
     
 }
 
-#about div p{
+#about div p{    
     padding-inline: 3rem;
     margin-bottom: var(--margin-tittle);
     color: var(--dark-light);
@@ -1483,4 +1483,36 @@ footer .footer-author{
     
         transition: .3s;
     }
+}
+@media screen and (min-width: 700px){
+    #about .about-paragraph{
+        grid-template-columns: repeat(2, 32rem);
+        justify-content: center;
+    }
+
+    #depoimentos .depoimentos-content p{
+        width: 32rem;
+    }
+
+    #planosAcessiveis .planos-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #atualizacoes p{
+        width: 45rem;
+    }
+
+    footer{
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    footer .social-media{
+        order: 1;
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1023px){
+
 }
