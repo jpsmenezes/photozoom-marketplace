@@ -110,8 +110,6 @@ li{
 body.dark-theme #about p,
 body.dark-theme #about h2,
 body.dark-theme #tudoQueVocePrecisa h2,
-#tudoQueVocePrecisa .options-text h4,
-#tudoQueVocePrecisa .options-text p,
 body.dark-theme #categorias{
     color: var(--medium-light);
 }
@@ -160,7 +158,9 @@ body.dark-theme #colaboradores{
 }
 
 body.dark-theme #categorias ul > li a,
-body.dark-theme #planosAcessiveis .personal li.inactive{
+body.dark-theme #planosAcessiveis .personal li.inactive,
+body.dark-theme #tudoQueVocePrecisa .options-text h4,
+body.dark-theme #tudoQueVocePrecisa .options-text p{
     color: var(--medium-dark);
 }
 
@@ -484,6 +484,8 @@ body.expended .header-right .menu-close{
 }
 
 #about h2{
+    max-width: 40rem;
+    margin-inline: auto;
     padding-top: var(--margin-tittle);
 
     color: var(--dark-light);
@@ -642,8 +644,7 @@ body.expended .header-right .menu-close{
 }
 
 /*=============== CATEGORIAS ======================*/
-#categorias{
-   grid-template-columns:auto;
+#categorias{   
    justify-content: center;
       
    width: 100%;  
@@ -1211,6 +1212,8 @@ body.expended .header-right .menu-close{
 }
 
 #gratisPremium .content-wrapper h2{
+    max-width: 40rem;
+
     font-weight: var(--bold);
     font-size: 3rem;
     line-height: 170%;
@@ -1272,7 +1275,9 @@ body.expended .header-right .menu-close{
 }
 
 #atualizacoes h2{
+    max-width: 30rem;
     padding: 7.7rem 0 2.1rem;
+
     font-weight: var(--medium-regular);
     font-size: var(--h2-font-size);
     line-height: 150%;
@@ -1429,24 +1434,53 @@ footer .footer-author{
     }
 }
 @media screen and (max-width: 320px){        
-        #about button.planoIdeal{
+    #about button.planoIdeal{
             font-size: 1.1rem;
-        }
+    }
 
-        #depoimentos .depoimentos-content :is(p, span){
+    #depoimentos .depoimentos-content :is(p, span){
             font-size: var(--p-font-size);
-        }
+    }
 
-        #planosAcessiveis li{
+    #planosAcessiveis li{
             font-size: 1.3rem;
-        }
+    }
 
-        #colaboradores .colaboradores-slider{
+    #colaboradores .colaboradores-slider{
             height: 115vh;
-        }
+    }
 }
 
 /* For medium devices */
 @media screen and (min-width: 576px){
+    #categorias .grid{
+        grid-template-columns: repeat(2, max-content);
+        justify-content: center;       
+        column-gap: 20%;
+
+        padding-top: 3rem;
+    }
+
+    #categorias ul > li{
+        text-align: left;
+    }
+
+    #gratisPremium .gratis-premium-btn-content{
+        display: flex;
+        gap: 2rem;
+
+        padding-top: 3rem;
+    }
+
+    #gratisPremium .content-wrapper .btn-gratis{
+        margin-block: initial;  
+    }
     
+    #gratisPremium .content-wrapper .btn-premium{
+        background-color: var(--primary-color);;
+        color: var(--white);
+        border: none;
+    
+        transition: .3s;
+    }
 }
