@@ -92,7 +92,7 @@ li{
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .wrapper{   
-    padding-inline: var(--padding-wrapper);   
+    padding-inline: var(--padding-wrapper);     
 }
 
 .grid{
@@ -1515,6 +1515,22 @@ footer .footer-author{
 @media screen and (min-width: 1023px){
 
     /*=============== HEADER ======================*/
+    body > header{
+        position: fixed;
+        top: 2.2rem;
+        left: 50%;
+        transform: translate(-50%);       
+    
+        width: 95%;
+        border-radius: 10px; 
+    }
+
+    header .container{
+        max-width: 1168px;
+        margin-inline: auto;
+        padding-inline: 3rem;
+    }
+
     header nav{       
         all: unset;
       
@@ -1522,7 +1538,8 @@ footer .footer-author{
 
     header nav ul{
         display: flex;       
-        gap: 5rem;
+        gap: 1rem;
+        margin-top: 1rem;
     }
 
     header nav ul li{
@@ -1550,8 +1567,13 @@ footer .footer-author{
         background-color: var(--medium-dark);       
         transition: 300ms;        
     }
+
     header nav li a:hover:after{
         width: 100%;
+    }
+
+    body.dark-theme nav li a:hover{
+        color: var(--bg-light); 
     }
 
     header nav .nav-btn-login{
@@ -1562,7 +1584,16 @@ footer .footer-author{
         display: block;
     }
 
+    header .btn-login:hover{
+        background-color: var(--medium-dark);
+    }
+
     header .header-right :is(.menu-open, .menu-close){
         display: none;
+    }
+
+    /*=============== HERO ======================*/
+    #hero h1{
+        font-size: 6rem;
     }
 }
