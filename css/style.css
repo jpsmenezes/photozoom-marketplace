@@ -34,6 +34,8 @@
  font-size: 62.5%; /* 1rem = 10px */
 }
 
+
+
 /*organização do css = position, display, box, text*/
 /*=============== GERAL ======================*/
 *{
@@ -455,6 +457,7 @@ body.expended .header-right .menu-close{
 
 #about button.planoIdeal{
     width: min(100%, 50.1rem);
+    height: 5rem;
     margin-block: var(--margin-tittle);
     padding: 1rem 2rem 1rem 6rem;   
     border-radius: 3rem;
@@ -478,8 +481,8 @@ body.expended .header-right .menu-close{
     transition: .3s;
 }
 
-#about button:hover{
-    background-color: var(--dark-light);
+#about button.planoIdeal:hover{
+    background-color: var(--medium-dark);
 }
 
 #about h2{
@@ -1487,6 +1490,8 @@ footer .footer-author{
     #about .about-paragraph{
         grid-template-columns: repeat(2, 32rem);
         justify-content: center;
+
+        padding: 3rem 0 6rem;
     }
 
     #depoimentos .depoimentos-content p{
@@ -1513,6 +1518,15 @@ footer .footer-author{
 
 /* For large devices */
 @media screen and (min-width: 1023px){
+
+    :root{
+        /*========== Font and typography ==========*/    
+    --h1-font-size: 6rem;/**/
+    --h2-font-size: 3rem;
+    --h3-font-size: 2.4rem;
+    --h4-font-size: 1.6rem;
+    --p-font-size: 1.6rem; /**/
+    }
 
     /*=============== HEADER ======================*/
     body > header{
@@ -1590,10 +1604,31 @@ footer .footer-author{
 
     header .header-right :is(.menu-open, .menu-close){
         display: none;
+    }   
+
+    /*=============== ABOUT ======================*/
+    #about h2{
+        max-width: 60rem;
     }
 
-    /*=============== HERO ======================*/
-    #hero h1{
-        font-size: 6rem;
+    #about .about-paragraph{
+        grid-template-columns: repeat(2, 40rem);
+       
+    }
+
+    /*=============== PICTURES ======================*/
+    .grid-a{
+        grid-area: A;
+    }
+    .grid-b{
+        grid-area: B;
+    }
+    .grid-c{
+        grid-area: C;
+    }
+    #pictures{
+        grid-template-areas:
+        'A A A'
+        'B C C';        
     }
 }
