@@ -225,10 +225,8 @@ header :is( .logo-white, .logo-black, .logo-menu ){
 header .logo-white{
     display: block;
 }
-header .logo-black{
-    display: none;
-}
-header .logo-menu{
+
+header :is(.logo-black, .logo-menu){
     display: none;
 }
 
@@ -251,6 +249,7 @@ header nav{
 }
 header .btn-login{
     display: none;
+    padding: 1.10rem 5.85rem;
 }
 
 header .header-right{
@@ -285,8 +284,7 @@ header .header-right{
    display: none;
 }
 
-header :is(.nav-btn-login, .btn-login){    
-    padding: 1.65rem 5.85rem;
+header :is(.nav-btn-login, .btn-login){     
     border-radius: 4rem;
     background-color: var(--primary-color);
 
@@ -304,6 +302,7 @@ header .nav-btn-login:hover{
 }
 header .nav-btn-login{
     margin-top: 5rem;
+    padding: 1.65rem 5.85rem;
 }
 
 /*=============== MENU EXPENDED ======================*/
@@ -1515,4 +1514,46 @@ footer .footer-author{
 /* For large devices */
 @media screen and (min-width: 1023px){
 
+    /*=============== HEADER ======================*/
+    header nav{       
+        all: unset;
+      
+    }
+
+    header nav ul{
+        display: flex;
+        gap: 5rem;
+    }
+
+    header nav ul li a{         
+        color: var(--medium-dark); 
+        font-size: var(--p-font-size);       
+    }
+    header nav ul li a:hover{
+        color: var(--dark-light);       
+    }
+    header nav li a::after{
+        content: " ";
+        display: block;        
+        width: 0%;
+        height: 2px ;
+       
+        background-color: var(--dark-light);       
+        transition: 300ms;        
+    }
+    header nav li a:hover:after{
+        width: 100%;
+    }
+
+    header nav .nav-btn-login{
+        display: none;
+    }
+
+    header .btn-login{
+        display: block;
+    }
+
+    header .header-right :is(.menu-open, .menu-close){
+        display: none;
+    }
 }
