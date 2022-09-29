@@ -1645,12 +1645,8 @@ footer .footer-author{
 
    #pictures .grid-a .photo-content{
         position: absolute;
-        top: 20%;
-        left: 60%;
-   }
-   #pictures .grid-c .photo-content{
-        position: absolute;
-        top: 2%;
+        top: 10%;
         left: 5%;
    }
+   
 }
