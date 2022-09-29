@@ -110,7 +110,15 @@ themeButton.addEventListener('click', ()=>{
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
-    },    
+    },   
+    
+    breakpoints: {      
+      1023: {
+        slidesPerView: 4,        
+        loop: false,       
+        enabled:false,        
+      },
+    },
   });
 
 // COLABORADORES-SLIDE 

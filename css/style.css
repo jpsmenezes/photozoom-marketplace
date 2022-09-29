@@ -1679,11 +1679,16 @@ footer .footer-author{
         margin-inline: auto;
     }
 
+    /*=============== DEPOIMENTOS ======================*/
     #depoimentos .depoimentos-content p{
         width: 70%;
         margin-inline: auto;
     }
     #depoimentos .swiper-wrapper{
        max-width: 1168px;
+    }
+
+    #desconto .swiper-slide .desconto-content button{
+        width: 15.7rem;
     }
 }
