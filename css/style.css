@@ -566,7 +566,7 @@ body.expended .header-right .menu-close{
 
 #pictures .photo-tittle{
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 #pictures .line-vertical{
@@ -1531,12 +1531,13 @@ footer .footer-author{
     /*=============== HEADER ======================*/
     body > header{
         position: fixed;
-        top: 2.2rem;
+        top: 1rem;
         left: 50%;
         transform: translate(-50%);       
     
         width: 95%;
         border-radius: 10px; 
+        box-shadow: 0 5px 5px hsla(0, 0%, 0%, 0.35);
     }
 
     header .container{
@@ -1575,7 +1576,7 @@ footer .footer-author{
         content: " ";
         display: block;        
         width: 0%;
-        height: 2px ;
+        height: 2.2px ;
         margin-top: .5rem;
        
         background-color: var(--medium-dark);       
@@ -1626,9 +1627,30 @@ footer .footer-author{
     .grid-c{
         grid-area: C;
     }
+
     #pictures{
         grid-template-areas:
         'A A A'
         'B C C';        
     }
+
+    #pictures h3{
+        width: 32rem;
+        font-size: 3.2rem;
+    }
+
+    #pictures .photo-content{
+        width: 32rem;
+    }
+
+   #pictures .grid-a .photo-content{
+        position: absolute;
+        top: 20%;
+        left: 60%;
+   }
+   #pictures .grid-c .photo-content{
+        position: absolute;
+        top: 2%;
+        left: 5%;
+   }
 }
