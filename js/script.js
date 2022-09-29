@@ -73,20 +73,33 @@ themeButton.addEventListener('click', ()=>{
 
   // DEPOIMENTO-SLIDE 
   const depoimentoSlide = new Swiper(".depoimentos-slider-container", {
+    
     //PARAMETROS
     slidesPerView: 1,        
     loop: true,
     initialSlide: 1,
-     //PAGINAÇÃO
+     
+    //PAGINAÇÃO
     pagination: {
       el: ".swiper-pagination",
       clickable: true,     
     },   
+    
     //AUTOPLAY
     autoplay: {
       delay: 5000,
       disableOnInteraction:false,
     },       
+
+    breakpoints: {
+      // when window width is >= 1023px
+      1023: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+
+        autoplay:false,
+      },
+    },
   });
   
   // DESCONTO-SLIDE 
