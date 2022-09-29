@@ -1678,4 +1678,12 @@ footer .footer-author{
         max-width: 1168px;
         margin-inline: auto;
     }
+
+    #depoimentos .depoimentos-content p{
+        width: 70%;
+        margin-inline: auto;
+    }
+    #depoimentos .swiper-wrapper{
+       max-width: 1168px;
+    }
 }

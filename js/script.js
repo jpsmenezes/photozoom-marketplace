@@ -96,8 +96,9 @@ themeButton.addEventListener('click', ()=>{
       1023: {
         slidesPerView: 3,
         initialSlide: 1,
-        spaceBetween: 0,        
+        loop: false,       
         enabled:false,
+        autoplay:false,
       },
     },
   });
