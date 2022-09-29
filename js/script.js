@@ -95,9 +95,9 @@ themeButton.addEventListener('click', ()=>{
       // when window width is >= 1023px
       1023: {
         slidesPerView: 3,
-        spaceBetween: 0,
-
-        autoplay:false,
+        initialSlide: 1,
+        spaceBetween: 0,        
+        enabled:false,
       },
     },
   });
