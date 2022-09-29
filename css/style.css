@@ -1648,5 +1648,21 @@ footer .footer-author{
         top: 10%;
         left: 5%;
    }
+
+   /*=============== TUDO QUE VOCÊ PRECISA ======================*/
+   #tudoQueVocePrecisa{
+    padding-block: 8rem;
+   }
+   #tudoQueVocePrecisa .content{    
+    flex-direction: row;
+    justify-content: space-between; 
+    gap: 5%;
+    width: min(100%, 1168px);
+    margin-inline: auto;
+    }
+
+    #tudoQueVocePrecisa .content h4{
+        font-size: 2.2rem;
+    }
    
 }
