@@ -1665,4 +1665,17 @@ footer .footer-author{
         font-size: 2.2rem;
     }
    
+    /*=============== CATEGORIAS ======================*/
+    #categorias{
+        padding-block: 8rem;
+    }
+
+    #categorias .grid{
+        grid-template-columns: repeat(4, auto);
+        column-gap: 0;
+        justify-content: space-around;
+
+        max-width: 1168px;
+        margin-inline: auto;
+    }
 }
