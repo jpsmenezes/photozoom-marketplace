@@ -1,0 +1,391 @@
+/*=============== BREAKPOINTS ===============*/
+
+/* For small devices */
+@media screen and (max-width: 350px){
+    .header-right .btn-theme{
+        margin-right: 2.5rem;
+    }
+
+    #colaboradores .swiper-slide{        
+        align-items: initial;    
+    }
+    #colaboradores .swiper-slide h3,
+    #colaboradores .swiper-slide span,
+    #colaboradores .swiper-slide div{
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 335px){
+    #colaboradores .colaboradores-slider{
+        height: 120vh;
+    }
+}
+@media screen and (max-width: 320px){        
+    #about button.planoIdeal{
+            font-size: 1.1rem;
+    }
+
+    #depoimentos .depoimentos-content :is(p, span){
+            font-size: var(--p-font-size);
+    }
+
+    #planosAcessiveis li{
+            font-size: 1.3rem;
+    }
+
+    #colaboradores .colaboradores-slider{
+            height: 115vh;
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px){
+    #categorias .grid{
+        grid-template-columns: repeat(2, max-content);
+        justify-content: center;       
+        column-gap: 20%;
+
+        padding-top: 3rem;
+    }
+
+    #categorias ul > li{
+        text-align: left;
+    }
+
+    #gratisPremium .gratis-premium-btn-content{
+        display: flex;
+        gap: 2rem;
+
+        padding-top: 3rem;
+    }
+
+    #gratisPremium .content-wrapper .btn-gratis{
+        margin-block: initial;  
+    }
+    
+    #gratisPremium .content-wrapper .btn-premium{
+        background-color: var(--primary-color);;
+        color: var(--white);
+        border: none;
+    
+        transition: .3s;
+    }
+}
+@media screen and (min-width: 700px){
+    #hero h3 {        
+        padding-bottom: 12rem;
+    }
+    #about .about-paragraph{
+        grid-template-columns: repeat(2, 32rem);
+        justify-content: center;
+
+        padding: 3rem 0 6rem;
+    }
+
+    #depoimentos .depoimentos-content p{
+        width: 32rem;
+    }
+
+    #planosAcessiveis .planos-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #atualizacoes p{
+        width: 45rem;
+    }
+
+    footer{
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    footer .social-media{
+        order: 1;
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1023px){
+
+    :root{
+        /*========== Font and typography ==========*/    
+    --h1-font-size: 6rem;
+    --h2-font-size: 3rem;    
+    --p-font-size: 1.6rem; 
+    }
+
+    /*=============== HEADER ======================*/
+    body > header{
+        position: fixed;
+        top: 1rem;
+        left: 50%;
+        transform: translate(-50%);       
+    
+        width: min(95%, 1440px);
+        border-radius: 10px; 
+        box-shadow: 0 5px 5px hsla(0, 0%, 0%, 0.35);
+    }
+
+    header .container{
+        max-width: 1168px;
+        margin-inline: auto;
+        padding-inline: 3rem;
+    }
+
+    header nav{       
+        all: unset;
+      
+    }
+
+    header nav ul{
+        display: flex;       
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    header nav ul li{
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav ul li a{         
+        color: var(--medium-dark);  
+        padding: 1rem 2rem 1rem 2rem; 
+        
+        transition: .3s;
+    }
+    header nav ul li a:hover{
+        color: var(--dark-light); 
+        text-shadow: 0 0 1px var(--dark-light);     
+    }
+    header nav li a::after{
+        content: " ";
+        display: block;        
+        width: 0%;
+        height: 2.2px ;
+        margin-top: .5rem;
+       
+        background-color: var(--medium-dark);       
+        transition: 300ms;        
+    }
+
+    header nav li a:hover:after{
+        width: 100%;
+    }
+
+    body.dark-theme nav li a:hover{
+        color: var(--bg-light); 
+    }
+
+    header nav .nav-btn-login{
+        display: none;
+    }
+
+    header .btn-login{
+        display: block;
+    }
+
+    header .btn-login:hover{
+        background-color: var(--medium-dark);
+    }
+
+    header .header-right :is(.menu-open, .menu-close){
+        display: none;
+    }   
+
+    /*=============== ABOUT ======================*/
+    #about h2{
+        max-width: 60rem;
+    }
+
+    #about .about-paragraph{
+        grid-template-columns: repeat(2, 40rem);
+       
+    }
+
+    /*=============== PICTURES ======================*/
+    .grid-a{
+        grid-area: A;
+    }
+    .grid-b{
+        grid-area: B;
+    }
+    .grid-c{
+        grid-area: C;
+    }
+
+    #pictures{
+        grid-template-areas:
+        'A A A'
+        'B C C';        
+    }
+
+    #pictures h3{
+        width: 32rem;
+        font-size: 3.2rem;
+    }   
+
+    #pictures .photo-content{
+        width: 32rem;
+    }
+
+   #pictures .grid-a .photo-content{
+        position: absolute;
+        top: 10%;
+        left: 40%;
+        transform: translate(-100%);       
+   }
+
+   /*=============== TUDO QUE VOCÊ PRECISA ======================*/
+   #tudoQueVocePrecisa{
+    padding-block: 8rem;
+   }
+   #tudoQueVocePrecisa .content{    
+    flex-direction: row;
+    justify-content: space-between; 
+    gap: 5%;
+    width: min(100%, 1168px);
+    margin-inline: auto;
+    }
+
+    #tudoQueVocePrecisa .content h4{
+        font-size: 2.2rem;
+    }
+   
+    /*=============== CATEGORIAS ======================*/
+    #categorias{
+        padding-block: 8rem;
+    }
+
+    #categorias .grid{
+        grid-template-columns: repeat(4, auto);
+        column-gap: 0;
+        justify-content: space-around;
+
+        max-width: 1168px;
+        margin-inline: auto;
+    }
+
+    /*=============== BANNER-SLIDE ======================*/
+    
+    /*swiper button css*/
+    .nav-btn::after,
+    .nav-btn::before{      
+        opacity: 1;  
+        visibility: visible;
+        font-size: 4rem; 
+        font-weight: var(--bold);
+        color: var(--dark-light); 
+        
+        transition: .3s;
+    }
+
+    .nav-btn:hover:after,
+    .nav-btn:hover:before{
+        color: var(--primary-color);
+    }
+
+    #banner-slider .swiper-button-prev{
+        margin-left: 4rem;
+    }
+    #banner-slider .swiper-button-next{
+        margin-right: 4rem;
+    }
+
+    /*=============== DEPOIMENTOS ======================*/
+    #depoimentos .depoimentos-content p{
+        width: 70%;
+        margin-inline: auto;
+    }
+    #depoimentos .swiper-wrapper{
+       max-width: 1168px;
+    }
+
+    #desconto .swiper-slide .desconto-content button{
+        width: 15.7rem;
+    }
+
+    #desconto .swiper-slide .desconto-content{
+        bottom: 10%;
+    }
+    .depoimentos-slider-container{
+        max-width: 1168px;
+    }
+
+    /*=============== PLANOS ACESSÍVEIS ======================*/
+    #planosAcessiveis{       
+        margin-inline: auto;
+        padding-top: 8rem;
+    }
+
+    #planosAcessiveis .planos-content{
+        max-width: 1168px;
+        margin-inline: auto;
+    }
+    /*=============== COLABORADORES ======================*/
+    #colaboradores{
+        padding-block: 8rem;
+    }
+    #colaboradores .colaboradores-slider{
+       width: min(100%, 1168px);
+    }
+    
+
+    /*=============== GRATIS PREMIUM ==========================*/
+    #gratisPremium .content-wrapper h2{
+        max-width: 70rem;       
+        font-size: 4rem;        
+    }
+
+    #gratisPremium .gratis-premium-btn-content{
+        padding-top: 5rem;
+    }
+
+    #gratisPremium .content-wrapper {       
+        padding-inline: 20%;
+    }
+
+    /*=============== ATUALIZAÇÕES ==========================*/
+    #atualizacoes .atualizacao-content{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+
+        padding-block: 14rem;
+        max-width: 1168px;
+        margin-inline: auto;
+    }
+    #atualizacoes h2{
+        max-width: 45rem;       
+        text-align: left; 
+        padding: initial;      
+    }
+    #atualizacoes p{        
+        margin-bottom: initial;       
+        text-align: left;       
+    }
+
+    #atualizacoes input[type=submit] {
+        margin-bottom: initial;        
+    }
+
+}
+
+@media screen and (min-width: 1440px){
+    body{
+        zoom: 1;
+      }
+}
+
+/* For 2K & 4K resolutions */
+@media screen and (min-width: 2048px){
+    body{
+        zoom: 1.5;
+      }
+}
+
+@media screen and (min-width: 3840px) {
+    body{
+      zoom: 3;
+    }
+  }
