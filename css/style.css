@@ -551,10 +551,6 @@ body.expended .header-right .menu-close{
     object-position: 30% 0;
 }
 
-#pictures .photo:last-child img{
-    object-position: 60% 0;
-}
-
 #pictures .photo-content{
     position: absolute;
     bottom: 10%;
@@ -585,8 +581,13 @@ body.expended .header-right .menu-close{
 }
 
 #pictures p{   
+    width: 25rem;
+    margin-left: 2rem;
+    padding-top: 2rem;
+    
     line-height: 167.19%;
     font-weight: 400;
+
 }
 
 /*=============== TUDO QUE VC PRECISA ======================*/
@@ -877,19 +878,6 @@ body.expended .header-right .menu-close{
     width: 100%;
     height: 90vh;
     object-fit: cover;    
-}
-
-#desconto .swiper-slide:nth-child(2) img{
-    object-position: 40%;
-}
-#desconto .swiper-slide:nth-child(3) img{
-    object-position: 70%;
-}
-#desconto .swiper-slide:nth-child(4) img{
-    object-position: 50%;
-}
-#desconto .swiper-slide:nth-child(5) img{
-    object-position: 25%;
 }
 
 #desconto .desconto-gradiente{
@@ -1492,6 +1480,9 @@ footer .footer-author{
     }
 }
 @media screen and (min-width: 700px){
+    #hero h3 {        
+        padding-bottom: 12rem;
+    }
     #about .about-paragraph{
         grid-template-columns: repeat(2, 32rem);
         justify-content: center;
@@ -1526,11 +1517,9 @@ footer .footer-author{
 
     :root{
         /*========== Font and typography ==========*/    
-    --h1-font-size: 6rem;/**/
-    --h2-font-size: 3rem;
-    --h3-font-size: 2.4rem;
-    --h4-font-size: 1.6rem;
-    --p-font-size: 1.6rem; /**/
+    --h1-font-size: 6rem;
+    --h2-font-size: 3rem;    
+    --p-font-size: 1.6rem; 
     }
 
     /*=============== HEADER ======================*/
@@ -1540,7 +1529,7 @@ footer .footer-author{
         left: 50%;
         transform: translate(-50%);       
     
-        width: 95%;
+        width: min(95%, 1440px);
         border-radius: 10px; 
         box-shadow: 0 5px 5px hsla(0, 0%, 0%, 0.35);
     }
@@ -1642,7 +1631,7 @@ footer .footer-author{
     #pictures h3{
         width: 32rem;
         font-size: 3.2rem;
-    }
+    }   
 
     #pictures .photo-content{
         width: 32rem;
@@ -1651,7 +1640,8 @@ footer .footer-author{
    #pictures .grid-a .photo-content{
         position: absolute;
         top: 10%;
-        left: 5%;
+        left: 40%;
+        transform: translate(-100%);       
    }
 
    /*=============== TUDO QUE VOCÊ PRECISA ======================*/
