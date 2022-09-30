@@ -767,9 +767,7 @@ body.expended .header-right .menu-close{
 /*swiper button css*/
 .nav-btn::after,
 .nav-btn::before{    
-    font-size: 2rem; 
-    font-weight: var(--bold);
-    color: var(--dark-light); 
+    visibility: hidden;
     opacity: 0; 
 }
 
@@ -1684,6 +1682,32 @@ footer .footer-author{
 
         max-width: 1168px;
         margin-inline: auto;
+    }
+
+    /*=============== BANNER-SLIDE ======================*/
+    
+    /*swiper button css*/
+    .nav-btn::after,
+    .nav-btn::before{      
+        opacity: 1;  
+        visibility: visible;
+        font-size: 4rem; 
+        font-weight: var(--bold);
+        color: var(--dark-light); 
+        
+        transition: .3s;
+    }
+
+    .nav-btn:hover:after,
+    .nav-btn:hover:before{
+        color: var(--primary-color);
+    }
+
+    #banner-slider .swiper-button-prev{
+        margin-left: 4rem;
+    }
+    #banner-slider .swiper-button-next{
+        margin-right: 4rem;
     }
 
     /*=============== DEPOIMENTOS ======================*/
