@@ -105,14 +105,7 @@
 }
 
 /* For large devices */
-@media screen and (min-width: 1023px){
-
-    :root{
-        /*========== Font and typography ==========*/    
-    --h1-font-size: 6rem;
-    --h2-font-size: 3rem;    
-    --p-font-size: 1.6rem; 
-    }
+@media screen and (min-width: 1023px){   
 
     /*=============== HEADER ======================*/
     body > header{

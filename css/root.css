@@ -1,0 +1,39 @@
+:root{
+    /*=============== VARIABLES CSS ===============*/
+    /*============= colors ==============*/
+    --white: hsl(0, 0%, 100%);
+    --primary-color: hsl(196, 100%, 47%);
+    --dark-dark: hsl(0, 0%, 0%);
+    --dark-light: hsl(240, 11%, 30%);
+    --medium-dark: hsl(226, 9%, 62%);
+    --medium-light: hsl(0, 0%, 85%);
+    --bg-light: hsl(218, 30%, 96%);
+    
+    /*========== Font and typography ==========*/
+    --body-font: 'Roboto', sans-serif;
+    --h1-font-size: 4.5rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 2.4rem;
+    --h4-font-size: 1.6rem;
+    --p-font-size: 1.4rem;
+   
+    /*========== margin and padding ==========*/
+    --margin-tittle: 3rem;
+    --padding-wrapper: 1.5rem;
+   
+    /*========== font-weight ==========*/
+    --light: 300;
+    --medium: 400;
+    --medium-regular:500;
+    --regular: 600;
+    --bold: 700; 
+   }
+
+   @media screen and (min-width: 1023px){
+    :root{
+        /*========== Font and typography ==========*/    
+    --h1-font-size: 6rem;
+    --h2-font-size: 3rem;    
+    --p-font-size: 1.6rem; 
+    }
+}
