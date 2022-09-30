@@ -132,9 +132,13 @@ const colaboradoresSlide = new Swiper(".colaboradores-slider", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
-  },
+  },  
 
   breakpoints: {      
+    820: {      
+      slidesPerView: 2,                          
+    },
+
     1023: {      
       slidesPerView: 3,
       spaceBetween: 20,              
