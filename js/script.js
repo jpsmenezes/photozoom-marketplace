@@ -30,7 +30,7 @@ window.addEventListener('scroll', scrollUp);
 
 
 
-//=============== DARK MODE =============================================
+//=============== DARK MODE ===========================================
 const themeButton = document.querySelector('#theme-button');
 const darkTheme = 'dark-theme'; 
 const iconTheme = 'bx-sun'; 
@@ -56,7 +56,7 @@ themeButton.addEventListener('click', ()=>{
 
 
 
-//=============== SWIPER JS =========================================
+//=============== SWIPER JS =======================================
 // BANNER-SLIDE 
   const bannerSlide = new Swiper(".banner-slider-container", {
     slidesPerView: 1,        
